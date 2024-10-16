@@ -1,0 +1,21 @@
+1.0.5
+- Upgrade Deprecated Code
+
+1.0.4
+- Support unity 2018
+- Fix DirtyUtil Script Compatibility
+- Improvments in the scripts
+
+1.0.3
+- [Fix] Unselectable Slider Issue
+
+1.0.2
+- [New] Include UI/DefaultETC1 shader
+- [Fix] Direction of letters 
+
+1.0.1
+- [New] Unity 5.5 upgrade
+- [Fix ] Missed Group tag bug
+
+1.0.0
+- First release
