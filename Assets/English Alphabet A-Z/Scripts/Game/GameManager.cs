@@ -1,8 +1,8 @@
-using UnityEngine;
-using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 using TracingPackage;
+using UnityEngine;
+using UnityEngine.UI;
 
 ///Developed by Indie Studio
 ///https://assetstore.unity.com/publishers/9268
@@ -11,138 +11,140 @@ using TracingPackage;
 
 public class GameManager : MonoBehaviour
 {
-	public bool isRunning = true;
+    public bool isRunning = true;
 
-	/// <summary>
-	/// The current pencil.
-	/// </summary>
-	public Pencil currentPencil;
+    /// <summary>
+    /// The current pencil.
+    /// </summary>
+    public Pencil currentPencil;
 
-	/// <summary>
-	/// The shape order.
-	/// </summary>
-	public Text shapeOrder;
+    /// <summary>
+    /// The shape order.
+    /// </summary>
+    public Text shapeOrder;
 
-	/// <summary>
-	/// The write shape name text.
-	/// </summary>
-	public Text writeText;
+    /// <summary>
+    /// The write shape name text.
+    /// </summary>
+    public Text writeText;
 
-	/// <summary>
-	/// The path.
-	/// </summary>
-	private Path path;
+    /// <summary>
+    /// The path.
+    /// </summary>
+    private Path path;
 
-	/// <summary>
-	/// The shape parent.
-	/// </summary>
-	public Transform shapeParent;
+    /// <summary>
+    /// The shape parent.
+    /// </summary>
+    public Transform shapeParent;
 
-	/// <summary>
-	/// The shape reference.
-	/// </summary>
-	[HideInInspector]
-	public Shape shape;
+    /// <summary>
+    /// The shape reference.
+    /// </summary>
+    [HideInInspector]
+    public Shape shape;
 
-	/// <summary>
-	/// The path fill image.
-	/// </summary>
-	private Image pathFillImage;
+    /// <summary>
+    /// The path fill image.
+    /// </summary>
+    private Image pathFillImage;
 
-	/// <summary>
-	/// The click postion.
-	/// </summary>
-	private Vector3 clickPostion;
+    /// <summary>
+    /// The click postion.
+    /// </summary>
+    private Vector3 clickPostion;
 
-	/// <summary>
-	/// The direction between click and shape.
-	/// </summary>
-	private Vector2 direction;
+    /// <summary>
+    /// The direction between click and shape.
+    /// </summary>
+    private Vector2 direction;
 
-	/// <summary>
-	/// The current angle , angleOffset and fill amount.
-	/// </summary>
-	private float angle, angleOffset, fillAmount;
+    /// <summary>
+    /// The current angle , angleOffset and fill amount.
+    /// </summary>
+    private float angle,
+        angleOffset,
+        fillAmount;
 
-	/// <summary>
-	/// The clock wise sign.
-	/// </summary>
-	private float clockWiseSign;
+    /// <summary>
+    /// The clock wise sign.
+    /// </summary>
+    private float clockWiseSign;
 
-	/// <summary>
-	/// The hand reference.
-	/// </summary>
-	public Transform hand;
+    /// <summary>
+    /// The hand reference.
+    /// </summary>
+    public Transform hand;
 
-	/// <summary>
-	/// The default size of the cursor.
-	/// </summary>
-	private Vector3 cursorDefaultSize;
+    /// <summary>
+    /// The default size of the cursor.
+    /// </summary>
+    private Vector3 cursorDefaultSize;
 
-	/// <summary>
-	/// The click size of the cursor.
-	/// </summary>
-	private Vector3 cursorClickSize;
+    /// <summary>
+    /// The click size of the cursor.
+    /// </summary>
+    private Vector3 cursorClickSize;
 
-	/// <summary>
-	/// The target quarter of the radial fill.
-	/// </summary>
-	private float targetQuarter;
+    /// <summary>
+    /// The target quarter of the radial fill.
+    /// </summary>
+    private float targetQuarter;
 
-	/// <summary>
-	/// The effects audio source.
-	/// </summary>
-	private AudioSource effectsAudioSource;
+    /// <summary>
+    /// The effects audio source.
+    /// </summary>
+    private AudioSource effectsAudioSource;
 
-	/// <summary>
-	/// The bright effect.
-	/// </summary>
-	//public Transform brightEffect;
+    /// <summary>
+    /// The bright effect.
+    /// </summary>
+    //public Transform brightEffect;
 
     /// <summary>
     /// The complete effect.
     /// </summary>
     public ParticleSystem winEffect;
 
-	/// <summary>
-	/// The timer reference. 
-	/// </summary>
-	public Timer timer;
+    /// <summary>
+    /// The timer reference.
+    /// </summary>
+    public Timer timer;
 
-	/// <summary>
-	/// The window dialog reference.
-	/// </summary>
-	public WinDialog winDialog;
+    /// <summary>
+    /// The window dialog reference.
+    /// </summary>
+    public WinDialog winDialog;
 
-	/// <summary>
-	/// The completed sound effect.
-	/// </summary>
-	public AudioClip completedSFX;
+    /// <summary>
+    /// The completed sound effect.
+    /// </summary>
+    public AudioClip completedSFX;
 
-	/// <summary>
-	/// The correct sound effect.
-	/// </summary>
-	public AudioClip correctSFX;
+    /// <summary>
+    /// The correct sound effect.
+    /// </summary>
+    public AudioClip correctSFX;
 
-	/// <summary>
-	/// The wrong sound effect.
-	/// </summary>
-	public AudioClip wrongSFX;
+    /// <summary>
+    /// The wrong sound effect.
+    /// </summary>
+    public AudioClip wrongSFX;
 
-	/// <summary>
-	/// The locked sound effect.
-	/// </summary>
-	public AudioClip lockedSFX;
+    /// <summary>
+    /// The locked sound effect.
+    /// </summary>
+    public AudioClip lockedSFX;
 
-	/// <summary>
-	/// The shape label.
-	/// </summary>
-	public string shapeLabel = "Shape";
+    /// <summary>
+    /// The shape label.
+    /// </summary>
+    public string shapeLabel = "Shape";
 
-	/// <summary>
-	/// The hit2d reference.
-	/// </summary>
-	private RaycastHit2D hit2d;
+    /// <summary>
+    /// The hit2d reference.
+    /// </summary>
+    private RaycastHit2D hit2d;
 
     /// <summary>
     /// Static instance of this class.
@@ -151,123 +153,149 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-        //Initiate GameManager instance 
+        //Initiate GameManager instance
         if (instance == null)
         {
             instance = this;
         }
     }
 
-	// Use this for initialization
-	void Start ()
-	{
-		//Initiate values and setup the references
-		cursorDefaultSize = hand.transform.localScale;
-		cursorClickSize = cursorDefaultSize / 1.2f;
+    // Use this for initialization
+    void Start()
+    {
+        //Initiate values and setup the references
+        cursorDefaultSize = hand.transform.localScale;
+        cursorClickSize = cursorDefaultSize / 1.2f;
 
-		if (effectsAudioSource == null) {
-			effectsAudioSource = GameObject.Find ("AudioSources").GetComponents<AudioSource> () [1];
-		}
+        if (effectsAudioSource == null)
+        {
+            effectsAudioSource = GameObject.Find("AudioSources").GetComponents<AudioSource>()[1];
+        }
 
-		if (currentPencil != null) {
-			currentPencil.EnableSelection ();
-		}
+        if (currentPencil != null)
+        {
+            currentPencil.EnableSelection();
+        }
 
         winEffect.gameObject.SetActive(false);
 
-		ResetTargetQuarter ();
-		SetShapeOrderColor ();
-		CreateShape ();
-	}
+        ResetTargetQuarter();
+        SetShapeOrderColor();
+        CreateShape();
+    }
 
-	// Update is called once per frame
-	void Update ()
-	{
-		//Game Logic is here
+    // Update is called once per frame
+    void Update()
+    {
+        //Game Logic is here
 
-		DrawHand (GetCurrentPlatformClickPosition (Camera.main));
-		DrawBrightEffect (GetCurrentPlatformClickPosition (Camera.main));
+        DrawHand(GetCurrentPlatformClickPosition(Camera.main));
+        DrawBrightEffect(GetCurrentPlatformClickPosition(Camera.main));
 
-		if (shape == null) {
-			return;
-		}	
+        if (shape == null)
+        {
+            return;
+        }
 
-		if (shape.completed) {
-			return;
-		}
+        if (shape.completed)
+        {
+            return;
+        }
 
-		if (Input.GetMouseButtonDown (0)) {
-			//if (!shape.completed)
-				//brightEffect.GetComponent<ParticleEmitter> ().emit = true;
+        if (Input.GetMouseButtonDown(0))
+        {
+            //if (!shape.completed)
+            //brightEffect.GetComponent<ParticleEmitter> ().emit = true;
 
-			hit2d = Physics2D.Raycast (GetCurrentPlatformClickPosition (Camera.main), Vector2.zero);
-			if (hit2d.collider != null) {
-				if (hit2d.transform.tag == "Start") {
-					OnStartHitCollider (hit2d);
-					shape.CancelInvoke ();
-					shape.DisableTracingHand ();
-					EnableHand ();
-				} else if (hit2d.transform.tag == "Collider") {
-					shape.DisableTracingHand ();
-					EnableHand ();
-				}
-			}
+            hit2d = Physics2D.Raycast(GetCurrentPlatformClickPosition(Camera.main), Vector2.zero);
+            if (hit2d.collider != null)
+            {
+                if (hit2d.transform.tag == "Start")
+                {
+                    OnStartHitCollider(hit2d);
+                    shape.CancelInvoke();
+                    shape.DisableTracingHand();
+                    EnableHand();
+                }
+                else if (hit2d.transform.tag == "Collider")
+                {
+                    shape.DisableTracingHand();
+                    EnableHand();
+                }
+            }
+        }
+        else if (Input.GetMouseButtonUp(0))
+        {
+            //brightEffect.GetComponent<ParticleEmitter> ().emit = false;
+            DisableHand();
+            shape.Invoke("EnableTracingHand", 1);
+            ResetPath();
+        }
 
-		} else if (Input.GetMouseButtonUp (0)) {
-			//brightEffect.GetComponent<ParticleEmitter> ().emit = false;
-			DisableHand ();
-			shape.Invoke ("EnableTracingHand", 1);
-			ResetPath ();
-		}
+        if (!isRunning || path == null || pathFillImage == null)
+        {
+            return;
+        }
 
-		if (!isRunning || path == null || pathFillImage == null) {
-			return;
-		}
+        if (path.completed)
+        {
+            return;
+        }
 
-		if (path.completed) {
-			return;
-		}
+        hit2d = Physics2D.Raycast(GetCurrentPlatformClickPosition(Camera.main), Vector2.zero);
+        if (hit2d.collider == null)
+        {
+            if (correctSFX != null && effectsAudioSource != null)
+            {
+                CommonUtil.PlayOneShotClipAt(wrongSFX, Vector3.zero, effectsAudioSource.volume);
+            }
+            ResetPath();
+            return;
+        }
 
-		hit2d = Physics2D.Raycast (GetCurrentPlatformClickPosition (Camera.main), Vector2.zero);
-		if (hit2d.collider == null) {
-			if (correctSFX != null && effectsAudioSource != null) {
-				CommonUtil.PlayOneShotClipAt (wrongSFX, Vector3.zero, effectsAudioSource.volume);
-			}
-			ResetPath ();
-			return;
-		}
+        if (path.fillMethod == Path.FillMethod.Radial)
+        {
+            RadialFill();
+        }
+        else if (path.fillMethod == Path.FillMethod.Linear)
+        {
+            LinearFill();
+        }
+        else if (path.fillMethod == Path.FillMethod.Point)
+        {
+            PointFill();
+        }
+    }
 
-		if (path.fillMethod == Path.FillMethod.Radial) {
-			RadialFill ();
-		} else if (path.fillMethod == Path.FillMethod.Linear) {
-			LinearFill ();
-		} else if (path.fillMethod == Path.FillMethod.Point) {
-			PointFill ();
-		}
-	}
-
-	/// <summary>
-	/// On the start hit collider event.
-	/// </summary>
-	/// <param name="hit2d">Hit2d.</param>
-	private void OnStartHitCollider (RaycastHit2D hit2d)
-	{
-		path = hit2d.transform.GetComponentInParent<Path> ();
-		pathFillImage = CommonUtil.FindChildByTag (path.transform, "Fill").GetComponent<Image> ();
-		if (path.completed || !shape.IsCurrentPath (path)) {
-			ReleasePath ();
-		} else {
-			path.StopAllCoroutines ();
-			CommonUtil.FindChildByTag (path.transform, "Fill").GetComponent<Image> ().color = currentPencil.value;
-		}
-	}
+    /// <summary>
+    /// On the start hit collider event.
+    /// </summary>
+    /// <param name="hit2d">Hit2d.</param>
+    private void OnStartHitCollider(RaycastHit2D hit2d)
+    {
+        path = hit2d.transform.GetComponentInParent<Path>();
+        pathFillImage = CommonUtil.FindChildByTag(path.transform, "Fill").GetComponent<Image>();
+        if (path.completed || !shape.IsCurrentPath(path))
+        {
+            ReleasePath();
+        }
+        else
+        {
+            path.StopAllCoroutines();
+            CommonUtil.FindChildByTag(path.transform, "Fill").GetComponent<Image>().color =
+                currentPencil.value;
+        }
+    }
 
     /// <summary>
     /// Go to the Next shape.
     /// </summary>
     public void NextShape()
     {
-        if (ShapesManager.Shape.selectedShapeID >= 0 && ShapesManager.Shape.selectedShapeID < ShapesManager.instance.shapes.Count - 1)
+        if (
+            ShapesManager.Shape.selectedShapeID >= 0
+            && ShapesManager.Shape.selectedShapeID < ShapesManager.instance.shapes.Count - 1
+        )
         {
             //Get the next shape and check if it's locked , then do not load the next shape
             if (ShapesManager.Shape.selectedShapeID + 1 < ShapesManager.instance.shapes.Count)
@@ -277,7 +305,11 @@ public class GameManager : MonoBehaviour
                     //Play lock sound effectd
                     if (lockedSFX != null && effectsAudioSource != null)
                     {
-                        CommonUtil.PlayOneShotClipAt(lockedSFX, Vector3.zero, effectsAudioSource.volume);
+                        CommonUtil.PlayOneShotClipAt(
+                            lockedSFX,
+                            Vector3.zero,
+                            effectsAudioSource.volume
+                        );
                     }
                     //Skip the next
                     return;
@@ -285,8 +317,7 @@ public class GameManager : MonoBehaviour
             }
 
             ShapesManager.Shape.selectedShapeID++;
-            CreateShape();//Create new shape
-
+            CreateShape(); //Create new shape
         }
         else
         {
@@ -299,10 +330,13 @@ public class GameManager : MonoBehaviour
                 //Play lock sound effectd
                 if (lockedSFX != null && effectsAudioSource != null)
                 {
-                    CommonUtil.PlayOneShotClipAt(lockedSFX, Vector3.zero, effectsAudioSource.volume);
+                    CommonUtil.PlayOneShotClipAt(
+                        lockedSFX,
+                        Vector3.zero,
+                        effectsAudioSource.volume
+                    );
                 }
             }
-
         }
     }
 
@@ -311,7 +345,10 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void PreviousShape()
     {
-        if (ShapesManager.Shape.selectedShapeID > 0 && ShapesManager.Shape.selectedShapeID < ShapesManager.instance.shapes.Count)
+        if (
+            ShapesManager.Shape.selectedShapeID > 0
+            && ShapesManager.Shape.selectedShapeID < ShapesManager.instance.shapes.Count
+        )
         {
             ShapesManager.Shape.selectedShapeID--;
             CreateShape();
@@ -326,324 +363,404 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
-	/// <summary>
-	/// Create new shape.
-	/// </summary>
-	private void CreateShape ()
-	{
-		timer.Reset ();
+    /// <summary>
+    /// Create new shape.
+    /// </summary>
+    private void CreateShape()
+    {
+        timer.Reset();
         winEffect.gameObject.SetActive(false);
-		GameObject.Find ("ResetConfirmDialog").GetComponent<Dialog> ().Hide ();
-		Area.Hide ();
-		winDialog.Hide ();
-		GameObject.Find ("NextButton").GetComponent<Animator> ().SetBool ("Select", false);
-		Shape shapeComponent = GameObject.FindObjectOfType<Shape> ();
-		if (shapeComponent != null) {
-			Destroy (shapeComponent.gameObject);
-		}
-
-		try {
-            shapeOrder.text = (ShapesManager.Shape.selectedShapeID + 1) + "/" + ShapesManager.instance.shapes.Count;
-			ShapesManager.instance.lastSelectedGroup = ShapesManager.Shape.selectedShapeID- 1;
-            GameObject shapePrefab = ShapesManager.instance.GetCurrentShape().gamePrefab;
-			GameObject shapeGameObject = Instantiate (shapePrefab, Vector3.zero, Quaternion.identity) as GameObject;
-			shapeGameObject.transform.SetParent (shapeParent);
-			shapeGameObject.transform.localPosition = shapePrefab.transform.localPosition;
-			shapeGameObject.name = shapePrefab.name;
-			shapeGameObject.transform.localScale = shapePrefab.transform.localScale;
-			shape = GameObject.FindObjectOfType<Shape> ();
-		} catch
+        GameObject.Find("ResetConfirmDialog").GetComponent<Dialog>().Hide();
+        Area.Hide();
+        winDialog.Hide();
+        GameObject.Find("NextButton").GetComponent<Animator>().SetBool("Select", false);
+        Shape shapeComponent = GameObject.FindObjectOfType<Shape>();
+        if (shapeComponent != null)
         {
-			//Catch the exception or display an alert
-		}
+            Destroy(shapeComponent.gameObject);
+        }
 
-		if (shape == null) {
-			return;
-		}
+        try
+        {
+            shapeOrder.text =
+                (ShapesManager.Shape.selectedShapeID + 1)
+                + "/"
+                + ShapesManager.instance.shapes.Count;
+            ShapesManager.instance.lastSelectedGroup = ShapesManager.Shape.selectedShapeID - 1;
+            GameObject shapePrefab = ShapesManager.instance.GetCurrentShape().gamePrefab;
+            GameObject shapeGameObject =
+                Instantiate(shapePrefab, Vector3.zero, Quaternion.identity) as GameObject;
+            shapeGameObject.transform.SetParent(shapeParent);
+            shapeGameObject.transform.localPosition = shapePrefab.transform.localPosition;
+            shapeGameObject.name = shapePrefab.name;
+            shapeGameObject.transform.localScale = shapePrefab.transform.localScale;
+            shape = GameObject.FindObjectOfType<Shape>();
+        }
+        catch
+        {
+            //Catch the exception or display an alert
+        }
+
+        if (shape == null)
+        {
+            return;
+        }
         Spell();
-		if (writeText != null)
-			writeText.text = "Write the " + shapeLabel.ToLower () + " '" + shape.GetTitle () + "'";
-		Transform restConfirmMessage = CommonUtil.FindChildByTag (GameObject.Find ("ResetConfirmDialog").transform, "Message");
-		restConfirmMessage.GetComponent<Text> ().text = "Reset " + shapeLabel + " " + shape.GetTitle () + " ?";
-		EnableGameManager ();
-	}
+        if (writeText != null)
+            writeText.text = "Write the " + shapeLabel.ToLower() + " '" + shape.GetTitle() + "'";
+        Transform restConfirmMessage = CommonUtil.FindChildByTag(
+            GameObject.Find("ResetConfirmDialog").transform,
+            "Message"
+        );
+        restConfirmMessage.GetComponent<Text>().text =
+            "Reset " + shapeLabel + " " + shape.GetTitle() + " ?";
+        EnableGameManager();
+    }
 
-	/// <summary>
-	/// Draw the hand.
-	/// </summary>
-	/// <param name="clickPosition">Click position.</param>
-	private void DrawHand (Vector3 clickPosition)
-	{
-		if (hand == null) {
-			return;
-		}
+    /// <summary>
+    /// Draw the hand.
+    /// </summary>
+    /// <param name="clickPosition">Click position.</param>
+    private void DrawHand(Vector3 clickPosition)
+    {
+        if (hand == null)
+        {
+            return;
+        }
 
-		hand.transform.position = clickPosition;
-	}
+        hand.transform.position = clickPosition;
+    }
 
-	/// <summary>
-	/// Set the size of the hand to default size.
-	/// </summary>
-	private void SetHandDefaultSize ()
-	{
-		hand.transform.localScale = cursorDefaultSize;
-	}
+    /// <summary>
+    /// Set the size of the hand to default size.
+    /// </summary>
+    private void SetHandDefaultSize()
+    {
+        hand.transform.localScale = cursorDefaultSize;
+    }
 
-	/// <summary>
-	/// Set the size of the hand to click size.
-	/// </summary>
-	private void SetHandClickSize ()
-	{
-		hand.transform.localScale = cursorClickSize;
-	}
+    /// <summary>
+    /// Set the size of the hand to click size.
+    /// </summary>
+    private void SetHandClickSize()
+    {
+        hand.transform.localScale = cursorClickSize;
+    }
 
-	/// <summary>
-	/// Get the current platform click position.
-	/// </summary>
-	/// <returns>The current platform click position.</returns>
-	private Vector3 GetCurrentPlatformClickPosition (Camera camera)
-	{
-		Vector3 clickPosition = Vector3.zero;
+    /// <summary>
+    /// Get the current platform click position.
+    /// </summary>
+    /// <returns>The current platform click position.</returns>
+    private Vector3 GetCurrentPlatformClickPosition(Camera camera)
+    {
+        Vector3 clickPosition = Vector3.zero;
 
-		if (Application.isMobilePlatform) {//current platform is mobile
-			if (Input.touchCount != 0) {
-				Touch touch = Input.GetTouch (0);
-				clickPosition = touch.position;
-			}
-		} else {//others
-			clickPosition = Input.mousePosition;
-		}
+        if (Application.isMobilePlatform)
+        { //current platform is mobile
+            if (Input.touchCount != 0)
+            {
+                Touch touch = Input.GetTouch(0);
+                clickPosition = touch.position;
+            }
+        }
+        else
+        { //others
+            clickPosition = Input.mousePosition;
+        }
 
-		clickPosition = camera.ScreenToWorldPoint (clickPosition);//get click position in the world space
-		clickPosition.z = 0;
-		return clickPosition;
-	}
+        clickPosition = camera.ScreenToWorldPoint(clickPosition); //get click position in the world space
+        clickPosition.z = 0;
+        return clickPosition;
+    }
 
-	/// <summary>
-	/// Radial the fill method.
-	/// </summary>
-	private void RadialFill ()
-	{
-		clickPostion = Camera.main.ScreenToWorldPoint (Input.mousePosition);
+    /// <summary>
+    /// Radial the fill method.
+    /// </summary>
+    private void RadialFill()
+    {
+        clickPostion = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-		direction = clickPostion - path.transform.position;
+        direction = clickPostion - path.transform.position;
 
-		angleOffset = 0;
-		clockWiseSign = (pathFillImage.fillClockwise ? 1 : -1);
+        angleOffset = 0;
+        clockWiseSign = (pathFillImage.fillClockwise ? 1 : -1);
 
-		if (pathFillImage.fillOrigin == 0) {//Bottom
-			angleOffset = 0;
-		} else if (pathFillImage.fillOrigin == 1) {//Right
-			angleOffset = clockWiseSign * 90;
-		} else if (pathFillImage.fillOrigin == 2) {//Top
-			angleOffset = -180;
-		} else if (pathFillImage.fillOrigin == 3) {//left
-			angleOffset = -clockWiseSign * 90;
-		}
+        if (pathFillImage.fillOrigin == 0)
+        { //Bottom
+            angleOffset = 0;
+        }
+        else if (pathFillImage.fillOrigin == 1)
+        { //Right
+            angleOffset = clockWiseSign * 90;
+        }
+        else if (pathFillImage.fillOrigin == 2)
+        { //Top
+            angleOffset = -180;
+        }
+        else if (pathFillImage.fillOrigin == 3)
+        { //left
+            angleOffset = -clockWiseSign * 90;
+        }
 
-		angle = Mathf.Atan2 (-clockWiseSign * direction.x, -direction.y) * Mathf.Rad2Deg + angleOffset;
+        angle =
+            Mathf.Atan2(-clockWiseSign * direction.x, -direction.y) * Mathf.Rad2Deg + angleOffset;
 
-		if (angle < 0)
-			angle += 360;
+        if (angle < 0)
+            angle += 360;
 
-		angle = Mathf.Clamp (angle, 0, 360);
-		angle -= path.radialAngleOffset;
+        angle = Mathf.Clamp(angle, 0, 360);
+        angle -= path.radialAngleOffset;
 
-		if (path.quarterRestriction) {
-			if (!(angle >= 0 && angle <= targetQuarter)) {
-				pathFillImage.fillAmount = 0;
-				return;
-			}
+        if (path.quarterRestriction)
+        {
+            if (!(angle >= 0 && angle <= targetQuarter))
+            {
+                pathFillImage.fillAmount = 0;
+                return;
+            }
 
-			if (angle >= targetQuarter / 2) {
-				targetQuarter += 90;
-			} else if (angle < 45) {
-				targetQuarter = 90;
-			}
+            if (angle >= targetQuarter / 2)
+            {
+                targetQuarter += 90;
+            }
+            else if (angle < 45)
+            {
+                targetQuarter = 90;
+            }
 
-			targetQuarter = Mathf.Clamp (targetQuarter, 90, 360);
-		}
+            targetQuarter = Mathf.Clamp(targetQuarter, 90, 360);
+        }
 
-		fillAmount = Mathf.Abs (angle / 360.0f);
-		pathFillImage.fillAmount = fillAmount;
-		CheckPathComplete ();
-	}
+        fillAmount = Mathf.Abs(angle / 360.0f);
+        pathFillImage.fillAmount = fillAmount;
+        CheckPathComplete();
+    }
 
-	/// <summary>
-	/// Linear fill method.
-	/// </summary>
-	private void LinearFill ()
-	{
-		clickPostion = Camera.main.ScreenToWorldPoint (Input.mousePosition);
+    /// <summary>
+    /// Linear fill method.
+    /// </summary>
+    private void LinearFill()
+    {
+        clickPostion = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-		Vector3 rotation = path.transform.eulerAngles;
-		rotation.z -= path.offset;
+        Vector3 rotation = path.transform.eulerAngles;
+        rotation.z -= path.offset;
 
-		Rect rect = CommonUtil.RectTransformToScreenSpace (path.GetComponent<RectTransform> ());
+        Rect rect = CommonUtil.RectTransformToScreenSpace(path.GetComponent<RectTransform>());
 
-		Vector3 pos1 = Vector3.zero, pos2 = Vector3.zero;
+        Vector3 pos1 = Vector3.zero,
+            pos2 = Vector3.zero;
 
-		if (path.type == Path.ShapeType.Horizontal) {
-			pos1.x = path.transform.position.x - Mathf.Sin (rotation.z * Mathf.Deg2Rad) * rect.width / 2.0f;
-			pos1.y = path.transform.position.y - Mathf.Cos (rotation.z * Mathf.Deg2Rad) * rect.width / 2.0f;
+        if (path.type == Path.ShapeType.Horizontal)
+        {
+            pos1.x =
+                path.transform.position.x
+                - Mathf.Sin(rotation.z * Mathf.Deg2Rad) * rect.width / 2.0f;
+            pos1.y =
+                path.transform.position.y
+                - Mathf.Cos(rotation.z * Mathf.Deg2Rad) * rect.width / 2.0f;
 
-			pos2.x = path.transform.position.x + Mathf.Sin (rotation.z * Mathf.Deg2Rad) * rect.width / 2.0f;
-			pos2.y = path.transform.position.y + Mathf.Cos (rotation.z * Mathf.Deg2Rad) * rect.width / 2.0f;
-		} else {
+            pos2.x =
+                path.transform.position.x
+                + Mathf.Sin(rotation.z * Mathf.Deg2Rad) * rect.width / 2.0f;
+            pos2.y =
+                path.transform.position.y
+                + Mathf.Cos(rotation.z * Mathf.Deg2Rad) * rect.width / 2.0f;
+        }
+        else
+        {
+            pos1.x =
+                path.transform.position.x
+                - Mathf.Cos(rotation.z * Mathf.Deg2Rad) * rect.height / 2.0f;
+            pos1.y =
+                path.transform.position.y
+                - Mathf.Sin(rotation.z * Mathf.Deg2Rad) * rect.height / 2.0f;
 
-			pos1.x = path.transform.position.x - Mathf.Cos (rotation.z * Mathf.Deg2Rad) * rect.height / 2.0f;
-			pos1.y = path.transform.position.y - Mathf.Sin (rotation.z * Mathf.Deg2Rad) * rect.height / 2.0f;
+            pos2.x =
+                path.transform.position.x
+                + Mathf.Cos(rotation.z * Mathf.Deg2Rad) * rect.height / 2.0f;
+            pos2.y =
+                path.transform.position.y
+                + Mathf.Sin(rotation.z * Mathf.Deg2Rad) * rect.height / 2.0f;
+        }
 
-			pos2.x = path.transform.position.x + Mathf.Cos (rotation.z * Mathf.Deg2Rad) * rect.height / 2.0f;
-			pos2.y = path.transform.position.y + Mathf.Sin (rotation.z * Mathf.Deg2Rad) * rect.height / 2.0f;
-		}
+        pos1.z = path.transform.position.z;
+        pos2.z = path.transform.position.z;
 
-		pos1.z = path.transform.position.z;
-		pos2.z = path.transform.position.z;
+        GameObject obj1 = GameObject.Find("obj1");
+        if (obj1 == null)
+        {
+            obj1 = new GameObject("obj1");
+        }
 
-		GameObject obj1 = GameObject.Find ("obj1");
-		if (obj1 == null) {
-			obj1 = new GameObject ("obj1");
-		}
+        GameObject obj2 = GameObject.Find("obj2");
+        if (obj2 == null)
+        {
+            obj2 = new GameObject("obj2");
+        }
 
-		GameObject obj2 = GameObject.Find ("obj2");
-		if (obj2 == null) {
-			obj2 = new GameObject ("obj2");
-		}
+        if (path.flip)
+        {
+            Vector3 temp = pos2;
+            pos2 = pos1;
+            pos1 = temp;
+        }
 
-		if (path.flip) {
-			Vector3 temp = pos2;
-			pos2 = pos1;
-			pos1 = temp;
-		}
+        obj1.transform.position = pos1;
+        obj2.transform.position = pos2;
 
-		obj1.transform.position = pos1;
-		obj2.transform.position = pos2;
+        clickPostion.x = Mathf.Clamp(
+            clickPostion.x,
+            Mathf.Min(pos1.x, pos2.x),
+            Mathf.Max(pos1.x, pos2.x)
+        );
+        clickPostion.y = Mathf.Clamp(
+            clickPostion.y,
+            Mathf.Min(pos1.y, pos2.y),
+            Mathf.Max(pos1.y, pos2.y)
+        );
+        fillAmount = Vector2.Distance(clickPostion, pos1) / Vector2.Distance(pos1, pos2);
+        pathFillImage.fillAmount = fillAmount;
+        CheckPathComplete();
+    }
 
-		clickPostion.x = Mathf.Clamp (clickPostion.x, Mathf.Min (pos1.x, pos2.x), Mathf.Max (pos1.x, pos2.x));
-		clickPostion.y = Mathf.Clamp (clickPostion.y, Mathf.Min (pos1.y, pos2.y), Mathf.Max (pos1.y, pos2.y));
-		fillAmount = Vector2.Distance (clickPostion, pos1) / Vector2.Distance (pos1, pos2);
-		pathFillImage.fillAmount = fillAmount;
-		CheckPathComplete ();
-	}
+    /// <summary>
+    /// Point fill.
+    /// </summary>
+    private void PointFill()
+    {
+        pathFillImage.fillAmount = 1;
+        CheckPathComplete();
+    }
 
-	/// <summary>
-	/// Point fill.
-	/// </summary>
-	private void PointFill ()
-	{
-		pathFillImage.fillAmount = 1;
-		CheckPathComplete ();
-	}
+    /// <summary>
+    /// Checks wehther path completed or not.
+    /// </summary>
+    private void CheckPathComplete()
+    {
+        if (fillAmount >= path.completeOffset)
+        {
+            path.completed = true;
+            path.AutoFill();
+            path.SetNumbersVisibility(false);
+            ReleasePath();
+            if (CheckShapeComplete())
+            {
+                shape.completed = true;
+                OnShapeComplete();
+            }
+            else
+            {
+                if (correctSFX != null && effectsAudioSource != null)
+                {
+                    CommonUtil.PlayOneShotClipAt(
+                        correctSFX,
+                        Vector3.zero,
+                        effectsAudioSource.volume
+                    );
+                }
+            }
 
-	/// <summary>
-	/// Checks wehther path completed or not.
-	/// </summary>
-	private void CheckPathComplete ()
-	{
-		if (fillAmount >= path.completeOffset) {
+            shape.ShowPathNumbers(shape.GetCurrentPathIndex());
 
-			path.completed = true;
-			path.AutoFill ();
-			path.SetNumbersVisibility (false);
-			ReleasePath ();
-			if (CheckShapeComplete ()) {
-				shape.completed = true;
-				OnShapeComplete ();
-			} else {
-				if (correctSFX != null && effectsAudioSource != null) {
-					CommonUtil.PlayOneShotClipAt (correctSFX, Vector3.zero, effectsAudioSource.volume);
-				}
-			}
+            hit2d = Physics2D.Raycast(GetCurrentPlatformClickPosition(Camera.main), Vector2.zero);
+            if (hit2d.collider != null)
+            {
+                if (hit2d.transform.tag == "Start")
+                {
+                    if (shape.IsCurrentPath(hit2d.transform.GetComponentInParent<Path>()))
+                    {
+                        ResetPath();
+                        OnStartHitCollider(hit2d);
+                    }
+                }
+            }
+        }
+    }
 
-			shape.ShowPathNumbers (shape.GetCurrentPathIndex ());
+    /// <summary>
+    /// Check whether the shape completed or not.
+    /// </summary>
+    /// <returns><c>true</c>, if shape completed, <c>false</c> otherwise.</returns>
+    private bool CheckShapeComplete()
+    {
+        bool shapeCompleted = true;
+        Path[] paths = GameObject.FindObjectsOfType<Path>();
+        foreach (Path path in paths)
+        {
+            if (!path.completed)
+            {
+                shapeCompleted = false;
+                break;
+            }
+        }
+        return shapeCompleted;
+    }
 
-			hit2d = Physics2D.Raycast (GetCurrentPlatformClickPosition (Camera.main), Vector2.zero);
-			if (hit2d.collider != null) {
-				if (hit2d.transform.tag == "Start") {
-					if (shape.IsCurrentPath (hit2d.transform.GetComponentInParent<Path> ())) {
-						ResetPath ();
-						OnStartHitCollider (hit2d);
-					}
-				}
-			}
-		}
-	}
+    /// <summary>
+    /// On shape completed event.
+    /// </summary>
+    private void OnShapeComplete()
+    {
+        DisableHand();
+        //brightEffect.GetComponent<ParticleEmitter> ().emit = false;
 
-	/// <summary>
-	/// Check whether the shape completed or not.
-	/// </summary>
-	/// <returns><c>true</c>, if shape completed, <c>false</c> otherwise.</returns>
-	private bool CheckShapeComplete ()
-	{
-		bool shapeCompleted = true;
-		Path [] paths = GameObject.FindObjectsOfType<Path> ();
-		foreach (Path path in paths) {
-			if (!path.completed) {
-				shapeCompleted = false;
-				break;
-			}
-		}
-		return shapeCompleted;
-	}
-
-	/// <summary>
-	/// On shape completed event.
-	/// </summary>
-	private void OnShapeComplete ()
-	{
-		DisableHand ();
-		//brightEffect.GetComponent<ParticleEmitter> ().emit = false;
-
-		Animator shapeAnimator = shape.GetComponent<Animator> ();
-		shapeAnimator.SetBool (shape.name, false);
-		shapeAnimator.SetTrigger ("Completed");
+        Animator shapeAnimator = shape.GetComponent<Animator>();
+        shapeAnimator.SetBool(shape.name, false);
+        shapeAnimator.SetTrigger("Completed");
 
         ShapesManager.Shape.StarsNumber collectedStars = Progress.instance.starsNumber;
 
         DataManager.SaveShapeStars(ShapesManager.Shape.selectedShapeID, collectedStars);
         if (ShapesManager.Shape.selectedShapeID + 1 < ShapesManager.instance.shapes.Count)
         {
-			DataManager.SaveShapeLockedStatus (ShapesManager.Shape.selectedShapeID+ 1, false);
-		}
+            DataManager.SaveShapeLockedStatus(ShapesManager.Shape.selectedShapeID + 1, false);
+        }
 
-		List <Transform> paths = CommonUtil.FindChildrenByTag (shape.transform.Find ("Paths"), "Path");
-		int from, to;
-		string [] slices;
-		foreach (Transform p in paths) {
-			slices = p.name.Split ('-');
-			from = int.Parse (slices [1]);
-			to = int.Parse (slices [2]);
-			DataManager.SaveShapePathColor (ShapesManager.Shape.selectedShapeID, from, to, CommonUtil.FindChildByTag (p, "Fill").GetComponent<Image> ().color);
-		}
+        List<Transform> paths = CommonUtil.FindChildrenByTag(shape.transform.Find("Paths"), "Path");
+        int from,
+            to;
+        string[] slices;
+        foreach (Transform p in paths)
+        {
+            slices = p.name.Split('-');
+            from = int.Parse(slices[1]);
+            to = int.Parse(slices[2]);
+            DataManager.SaveShapePathColor(
+                ShapesManager.Shape.selectedShapeID,
+                from,
+                to,
+                CommonUtil.FindChildByTag(p, "Fill").GetComponent<Image>().color
+            );
+        }
 
-		timer.Stop ();
-		Area.Show ();
-		winDialog.Show ();
-		GameObject.Find ("NextButton").GetComponent<Animator> ().SetTrigger ("Select");
+        timer.Stop();
+        Area.Show();
+        winDialog.Show();
+        GameObject.Find("NextButton").GetComponent<Animator>().SetTrigger("Select");
         winEffect.gameObject.SetActive(true);
 
-		if (correctSFX != null && effectsAudioSource != null) {
-			CommonUtil.PlayOneShotClipAt (completedSFX, Vector3.zero, effectsAudioSource.volume);
-		}
-	}
+        if (correctSFX != null && effectsAudioSource != null)
+        {
+            CommonUtil.PlayOneShotClipAt(completedSFX, Vector3.zero, effectsAudioSource.volume);
+        }
+    }
 
-	/// <summary>
-	/// Draw the bright effect.
-	/// </summary>
-	/// <param name="clickPosition">Click position.</param>
-	private void DrawBrightEffect (Vector3 clickPosition)
-	{
+    /// <summary>
+    /// Draw the bright effect.
+    /// </summary>
+    /// <param name="clickPosition">Click position.</param>
+    private void DrawBrightEffect(Vector3 clickPosition)
+    {
         /*
-		if (brightEffect == null) {
-			return;
-		}
+        if (brightEffect == null) {
+            return;
+        }
 
-		clickPosition.z = 0;
-		brightEffect.transform.position = clickPosition;
+        clickPosition.z = 0;
+        brightEffect.transform.position = clickPosition;
          */
-	}
+    }
 
     /// <summary>
     /// Spell the shape.
@@ -660,102 +777,104 @@ public class GameManager : MonoBehaviour
         AudioSources.instance.audioSources[1].Play();
     }
 
-	/// <summary>
-	/// Reset the shape.
-	/// </summary>
-	public void ResetShape ()
-	{
-		if (shape == null) {
-			return;
-		}
+    /// <summary>
+    /// Reset the shape.
+    /// </summary>
+    public void ResetShape()
+    {
+        if (shape == null)
+        {
+            return;
+        }
 
         winEffect.gameObject.SetActive(false);
-		GameObject.Find ("NextButton").GetComponent<Animator> ().SetBool ("Select", false);
-		Area.Hide ();
-		winDialog.Hide ();
-		shape.completed = false;
-		shape.GetComponent<Animator> ().SetBool ("Completed", false);
-		shape.CancelInvoke ();
-		shape.DisableTracingHand ();
-		Path [] paths = GameObject.FindObjectsOfType<Path> ();
-		foreach (Path path in paths) {
-			path.Reset ();
-		}
-		shape.Invoke ("EnableTracingHand", 2);
-		shape.ShowPathNumbers (shape.GetCurrentPathIndex ());
-		timer.Reset ();
+        GameObject.Find("NextButton").GetComponent<Animator>().SetBool("Select", false);
+        Area.Hide();
+        winDialog.Hide();
+        shape.completed = false;
+        shape.GetComponent<Animator>().SetBool("Completed", false);
+        shape.CancelInvoke();
+        shape.DisableTracingHand();
+        Path[] paths = GameObject.FindObjectsOfType<Path>();
+        foreach (Path path in paths)
+        {
+            path.Reset();
+        }
+        shape.Invoke("EnableTracingHand", 2);
+        shape.ShowPathNumbers(shape.GetCurrentPathIndex());
+        timer.Reset();
         Spell();
-	}
+    }
 
-	/// <summary>
-	/// Reset the path.
-	/// </summary>
-	private void ResetPath ()
-	{
-		if (path != null) 
-			path.Reset ();
-		ReleasePath ();
-		ResetTargetQuarter ();
-	}
+    /// <summary>
+    /// Reset the path.
+    /// </summary>
+    private void ResetPath()
+    {
+        if (path != null)
+            path.Reset();
+        ReleasePath();
+        ResetTargetQuarter();
+    }
 
-	/// <summary>
-	/// Reset the target quarter.
-	/// </summary>
-	private void ResetTargetQuarter ()
-	{
-		targetQuarter = 90;
-	}
+    /// <summary>
+    /// Reset the target quarter.
+    /// </summary>
+    private void ResetTargetQuarter()
+    {
+        targetQuarter = 90;
+    }
 
-	/// <summary>
-	/// Release the path.
-	/// </summary>
-	private void ReleasePath ()
-	{
-		path = null;
-		pathFillImage = null;
-	}
+    /// <summary>
+    /// Release the path.
+    /// </summary>
+    private void ReleasePath()
+    {
+        path = null;
+        pathFillImage = null;
+    }
 
-	/// <summary>
-	/// Set the color of the shape order.
-	/// </summary>
-	public void SetShapeOrderColor ()
-	{
-		if (currentPencil == null) {
-			return;
-		}
-		shapeOrder.color = currentPencil.value;
-	}
+    /// <summary>
+    /// Set the color of the shape order.
+    /// </summary>
+    public void SetShapeOrderColor()
+    {
+        if (currentPencil == null)
+        {
+            return;
+        }
+        shapeOrder.color = currentPencil.value;
+    }
 
-	/// <summary>
-	/// Enable the hand.
-	/// </summary>
-	public void EnableHand ()
-	{
+    /// <summary>
+    /// Enable the hand.
+    /// </summary>
+    public void EnableHand()
+    {
+        hand.GetComponent<SpriteRenderer>().enabled = true;
+    }
 
-		hand.GetComponent<SpriteRenderer> ().enabled = true;
-	}
+    /// <summary>
+    /// Disable the hand.
+    /// </summary>
+    public void DisableHand()
+    {
+        hand.GetComponent<SpriteRenderer>().enabled = false;
+    }
 
-	/// <summary>
-	/// Disable the hand.
-	/// </summary>
-	public void DisableHand ()
-	{
-		hand.GetComponent<SpriteRenderer> ().enabled = false;
-	}
+    /// <summary>
+    /// Disable the game manager.
+    /// </summary>
+    public void DisableGameManager()
+    {
+        isRunning = false;
+    }
 
-	/// <summary>
-	/// Disable the game manager.
-	/// </summary>
-	public void DisableGameManager ()
-	{
-		isRunning = false;
-	}
-
-	/// <summary>
-	/// Enable the game manager.
-	/// </summary>
-	public void EnableGameManager ()
-	{
-		isRunning = true;
-	}
+    /// <summary>
+    /// Enable the game manager.
+    /// </summary>
+    public void EnableGameManager()
+    {
+        isRunning = true;
+    }
 }
