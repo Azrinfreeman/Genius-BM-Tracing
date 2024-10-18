@@ -23,8 +23,10 @@ public class BackgroundController : MonoBehaviour
     {
         if (!inAlbum)
         {
+            //ShapesManager uses index
+            //ScrollSlider currentGroundIndex starts at 1
             if (
-                ShapesManager.Shape.selectedShapeID > 0
+                ShapesManager.Shape.selectedShapeID >= 0
                 && ShapesManager.Shape.selectedShapeID <= 10
             )
             {
