@@ -744,6 +744,9 @@ public class GameManager : MonoBehaviour
         {
             CommonUtil.PlayOneShotClipAt(completedSFX, Vector3.zero, effectsAudioSource.volume);
         }
+
+        //add code for getting rewards
+        RewardFillController.instance.GetReward();
     }
 
     /// <summary>
