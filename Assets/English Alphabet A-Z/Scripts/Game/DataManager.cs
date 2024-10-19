@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 
 ///Developed by Indie Studio
 ///https://assetstore.unity.com/publishers/9268
@@ -45,8 +46,79 @@ public class DataManager
     /// <param name="color">Color.</param>
     public static void SaveShapePathColor(int ID, int from, int to, Color color)
     {
-        PlayerPrefs.SetString(GetPathStrKey(ID,from,to), color.r + "," + color.g + "," + color.b + "," + color.a);
+        PlayerPrefs.SetString(
+            GetPathStrKey(ID, from, to),
+            color.r + "," + color.g + "," + color.b + "," + color.a
+        );
         PlayerPrefs.Save();
+    }
+
+    //new reward code here
+    public static void SaveRewardShape(int ID)
+    {
+        if (PlayerPrefs.GetInt("Shape_" + ID + "_Reward_Count") != 0)
+        {
+            int i = 0;
+            i = PlayerPrefs.GetInt("Shape_" + ID + "_Reward_Count");
+            i++;
+            PlayerPrefs.SetInt("Shape_" + ID + "_Reward_Count", i);
+
+            //CheckRewardShape(ID);
+        }
+        else
+        {
+            PlayerPrefs.SetInt("Shape_" + ID + "_Reward_Count", 1);
+            PlayerPrefs.Save();
+        }
+    }
+
+    public static void CheckRewardShape(int ID)
+    {
+        if (
+            PlayerPrefs.GetInt("Shape_" + ID + "_Reward_Count")
+            == RewardFillController.instance.rewardLastValue
+        )
+        {
+            //reset indexCount to 0
+            PlayerPrefs.SetInt("Shape_" + ID + "_Reward_Count", 0);
+            RewardFillController.instance.rewardValueIndex = 0;
+            int l;
+
+            //check IndexReward
+            if (PlayerPrefs.GetInt("Shape_" + ID + "_IndexReward") == 0)
+            {
+                l = 1;
+                PlayerPrefs.SetInt("Shape_" + ID + "_IndexReward", l);
+            }
+            else if (PlayerPrefs.GetInt("Shape_" + ID + "_IndexReward") > 0)
+            {
+                l = PlayerPrefs.GetInt("Shape_" + ID + "_IndexReward");
+
+                //check if IndexReward has unlocked all, no change is index REward == totalReward
+                if (l == PlayerPrefs.GetInt("Shape_" + ID + "_TotalReward"))
+                {
+                    PlayerPrefs.GetInt("Shape_" + ID + "_TotalReward");
+                }
+                else
+                {
+                    l++;
+                }
+                PlayerPrefs.SetInt("Shape_" + ID + "_IndexReward", l);
+            }
+
+            PlayerPrefs.Save();
+        }
+    }
+
+    public static void SaveTotalRewardShape(int ID, int count)
+    {
+        PlayerPrefs.SetInt("Shape_" + ShapesManager.Shape.selectedShapeID + "_TotalReward", count);
+        PlayerPrefs.Save();
+    }
+
+    public static int GetRewardShape(int ID)
+    {
+        return PlayerPrefs.GetInt("Shape_" + ID + "_Reward_Count");
     }
 
     /// <summary>
@@ -59,7 +131,7 @@ public class DataManager
     public static Color GetShapePathColor(int ID, int from, int to)
     {
         Color color = Color.white;
-        string key = GetPathStrKey(ID,from,to);
+        string key = GetPathStrKey(ID, from, to);
         if (PlayerPrefs.HasKey(key))
         {
             color = CommonUtil.StringRGBAToColor(PlayerPrefs.GetString(key));
@@ -103,7 +175,7 @@ public class DataManager
     /// <param name="to">To number.</param>
     public static string GetPathStrKey(int shapeID, int from, int to)
     {
-        return ShapesManager.shapePrefix+"-Shape-" + shapeID  + "-Path-" + from + "-" + to;
+        return ShapesManager.shapePrefix + "-Shape-" + shapeID + "-Path-" + from + "-" + to;
     }
 
     /// <summary>
@@ -113,7 +185,7 @@ public class DataManager
     /// <param name="ID">The ID of the shape.</param>
     public static string GetLockedStrKey(int ID)
     {
-        return ShapesManager.shapePrefix+"-Shape-" + ID + "-isLocked";
+        return ShapesManager.shapePrefix + "-Shape-" + ID + "-isLocked";
     }
 
     /// <summary>
@@ -123,7 +195,7 @@ public class DataManager
     /// <param name="ID">The ID of the shape.</param>
     public static string GetStarsStrKey(int ID)
     {
-        return ShapesManager.shapePrefix+"-Shape-" + ID + "-Stars";
+        return ShapesManager.shapePrefix + "-Shape-" + ID + "-Stars";
     }
 
     /// <summary>

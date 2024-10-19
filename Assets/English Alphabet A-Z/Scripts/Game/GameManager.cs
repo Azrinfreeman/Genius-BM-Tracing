@@ -712,6 +712,7 @@ public class GameManager : MonoBehaviour
         ShapesManager.Shape.StarsNumber collectedStars = Progress.instance.starsNumber;
 
         DataManager.SaveShapeStars(ShapesManager.Shape.selectedShapeID, collectedStars);
+        DataManager.SaveRewardShape(ShapesManager.Shape.selectedShapeID);
         if (ShapesManager.Shape.selectedShapeID + 1 < ShapesManager.instance.shapes.Count)
         {
             DataManager.SaveShapeLockedStatus(ShapesManager.Shape.selectedShapeID + 1, false);

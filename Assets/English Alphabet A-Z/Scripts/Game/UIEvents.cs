@@ -1,5 +1,5 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using UnityEngine;
 
 ///Developed by Indie Studio
 ///https://assetstore.unity.com/publishers/9268
@@ -85,6 +85,7 @@ public class UIEvents : MonoBehaviour
         }
         else
         {
+            DataManager.CheckRewardShape(ShapesManager.Shape.selectedShapeID);
             GameManager.instance.ResetShape();
         }
     }
@@ -116,7 +117,6 @@ public class UIEvents : MonoBehaviour
         {
             Debug.Log("Reset Confirm Dialog : Yes button clicked");
             GameManager.instance.ResetShape();
-
         }
         else if (value.name.Equals("NoButton"))
         {
@@ -124,7 +124,6 @@ public class UIEvents : MonoBehaviour
         }
         value.GetComponentInParent<Dialog>().Hide();
         GameManager.instance.EnableGameManager();
-
     }
 
     public void ResetGame()
