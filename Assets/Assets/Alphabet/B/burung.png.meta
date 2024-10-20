@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,343 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: burung_0
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 5121
+        width: 1936
+        height: 1422
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ac75ca287361704fad24cd3ef4fea9d
+      internalID: -1273310705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burung_1
+      rect:
+        serializedVersion: 2
+        x: 2428
+        y: 5130
+        width: 2195
+        height: 1422
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea0c99ee6dcd4d48945c0e94964e93f
+      internalID: -1491261535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burung_2
+      rect:
+        serializedVersion: 2
+        x: 4622
+        y: 5121
+        width: 2061
+        height: 1422
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a38670680726d4990c689a71550a45
+      internalID: 1815324999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burung_3
+      rect:
+        serializedVersion: 2
+        x: 6767
+        y: 5111
+        width: 1968
+        height: 1422
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa8299a9ec76b8f498db1a81928d6616
+      internalID: -1368101143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burung_4
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 3556
+        width: 1734
+        height: 1422
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca48c4f884c94424b92e93729e749df8
+      internalID: 1237462682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burung_5
+      rect:
+        serializedVersion: 2
+        x: 2455
+        y: 3582
+        width: 2099
+        height: 1422
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 524558835f4b9f943bdde3c0055da770
+      internalID: 1846060315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burung_6
+      rect:
+        serializedVersion: 2
+        x: 4614
+        y: 3556
+        width: 2120
+        height: 1422
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 434016845ebb4d648ad31739a7d82cb1
+      internalID: 935277531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burung_7
+      rect:
+        serializedVersion: 2
+        x: 6742
+        y: 3556
+        width: 1985
+        height: 1422
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c0b1d1c0b539134f98d91b7639455d4
+      internalID: -511832875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burung_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1778
+        width: 2311.5
+        height: 1778
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13ede70c9c3e0404795de7ce3d58489b
+      internalID: 1829951428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burung_9
+      rect:
+        serializedVersion: 2
+        x: 2311
+        y: 1778
+        width: 2311.5
+        height: 1778
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc974556754745c4ebaa09a46650c390
+      internalID: 653197083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burung_10
+      rect:
+        serializedVersion: 2
+        x: 4622
+        y: 1778
+        width: 2311.5
+        height: 1778
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55cb7bc2fc94cdb45a5b0d9565621bb7
+      internalID: 1752435985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burung_11
+      rect:
+        serializedVersion: 2
+        x: 6933
+        y: 1778
+        width: 2311.5
+        height: 1778
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6069ff362221d484f95cc1909f361048
+      internalID: 379763454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burung_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2311.5
+        height: 1778
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed8923c7fa843f345847a0c043fb50af
+      internalID: -432608092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burung_13
+      rect:
+        serializedVersion: 2
+        x: 2311
+        y: 0
+        width: 2311.5
+        height: 1778
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c4ace44d73ebd4bac4bdb7cd1a6e75
+      internalID: 1250829929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burung_14
+      rect:
+        serializedVersion: 2
+        x: 4622
+        y: 0
+        width: 2311.5
+        height: 1778
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66e7f25b3762f2141997e869fcfdb9a0
+      internalID: 1390199879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burung_15
+      rect:
+        serializedVersion: 2
+        x: 6933
+        y: 0
+        width: 2311.5
+        height: 1778
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98077f8359a03c143a33e938520bc531
+      internalID: 663083074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +455,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      burung_0: -1273310705
+      burung_1: -1491261535
+      burung_10: 1752435985
+      burung_11: 379763454
+      burung_12: -432608092
+      burung_13: 1250829929
+      burung_14: 1390199879
+      burung_15: 663083074
+      burung_2: 1815324999
+      burung_3: -1368101143
+      burung_4: 1237462682
+      burung_5: 1846060315
+      burung_6: 935277531
+      burung_7: -511832875
+      burung_8: 1829951428
+      burung_9: 653197083
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -20,6 +20,22 @@ public class RewardController : MonoBehaviour
     void Initiate()
     {
         int index = ShapesManager.Shape.selectedShapeID;
+
+        //hide all rewards first of all
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            transform.GetChild(i).gameObject.SetActive(false);
+        }
+
+        //enable reward only for selected index level reward
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            if (i == ShapesManager.Shape.selectedShapeID)
+            {
+                transform.GetChild(i).gameObject.SetActive(true);
+            }
+        }
+
         //add animals into variable HaiwanTotal
         for (int i = 0; i < transform.GetChild(index).childCount; i++)
         {

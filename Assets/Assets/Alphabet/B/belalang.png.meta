@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: belalang_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3777
+        width: 3715
+        height: 3335
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c3feefe75098d34baa345cb4741cb30
+      internalID: -3812600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: belalang_1
+      rect:
+        serializedVersion: 2
+        x: 3715
+        y: 3777
+        width: 3397
+        height: 3335
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53b5fac24954274439d3c358d2934337
+      internalID: -1336635417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: belalang_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 434
+        width: 3715
+        height: 3335
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b76ed9358d6c193439720aaf81d48524
+      internalID: 1779769616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: belalang_3
+      rect:
+        serializedVersion: 2
+        x: 3724
+        y: 424
+        width: 3388
+        height: 3335
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a369e8ab46c1f8a4a8f6907d53eb97cb
+      internalID: -263960271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +203,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      belalang_0: -3812600
+      belalang_1: -1336635417
+      belalang_2: 1779769616
+      belalang_3: -263960271
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
