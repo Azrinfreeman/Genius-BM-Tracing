@@ -48,6 +48,7 @@ public class RewardFillController : MonoBehaviour
         slider.value = rewardValueIndex;
         valueText.text = rewardValueIndex.ToString() + " / " + rewardLastValue.ToString();
 
+        //assign image if index Reward has increase
         if (
             PlayerPrefs.GetInt("Shape_" + ShapesManager.Shape.selectedShapeID + "_IndexReward")
             != PlayerPrefs.GetInt("Shape_" + ShapesManager.Shape.selectedShapeID + "_TotalReward")
@@ -61,6 +62,17 @@ public class RewardFillController : MonoBehaviour
         else
         {
             imageReward.GetComponent<Transform>().gameObject.SetActive(false);
+        }
+
+        if (
+            PlayerPrefs.GetInt("Shape_" + ShapesManager.Shape.selectedShapeID + "_IndexReward")
+            == PlayerPrefs.GetInt("Shape_" + ShapesManager.Shape.selectedShapeID + "_TotalReward")
+        )
+        {
+            PlayerPrefs.SetInt(
+                "Shape_" + ShapesManager.Shape.selectedShapeID + "_Reward_Count",
+                rewardLastValue
+            );
         }
     }
 

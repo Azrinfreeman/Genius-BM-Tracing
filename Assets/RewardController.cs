@@ -19,9 +19,11 @@ public class RewardController : MonoBehaviour
 
     void Initiate()
     {
-        for (int i = 0; i < transform.childCount; i++)
+        int index = ShapesManager.Shape.selectedShapeID;
+        //add animals into variable HaiwanTotal
+        for (int i = 0; i < transform.GetChild(index).childCount; i++)
         {
-            HaiwanTotal.Add(transform.GetChild(i));
+            HaiwanTotal.Add(transform.GetChild(index).GetChild(i));
             HaiwanTotal[i].gameObject.SetActive(false);
         }
         DataManager.SaveTotalRewardShape(ShapesManager.Shape.selectedShapeID, HaiwanTotal.Count);
@@ -29,7 +31,13 @@ public class RewardController : MonoBehaviour
 
     public Sprite AssignImage(int indexReward)
     {
-        return transform.GetChild(indexReward).GetChild(0).GetComponent<Image>().sprite;
+        //seek child in REward Haiwan, find child based on index shape, then get the child count of that indexShape
+        return transform
+            .GetChild(ShapesManager.Shape.selectedShapeID)
+            .transform.GetChild(indexReward)
+            .GetChild(0)
+            .GetComponent<Image>()
+            .sprite;
     }
 
     // Start is called before the first frame update
@@ -48,7 +56,10 @@ public class RewardController : MonoBehaviour
             );
             for (int l = 0; l < i; l++)
             {
-                transform.GetChild(l).gameObject.SetActive(true);
+                transform
+                    .GetChild(ShapesManager.Shape.selectedShapeID)
+                    .transform.GetChild(l)
+                    .gameObject.SetActive(true);
             }
         }
     }

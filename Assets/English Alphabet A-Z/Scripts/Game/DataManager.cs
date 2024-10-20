@@ -80,8 +80,25 @@ public class DataManager
         )
         {
             //reset indexCount to 0
-            PlayerPrefs.SetInt("Shape_" + ID + "_Reward_Count", 0);
-            RewardFillController.instance.rewardValueIndex = 0;
+
+            if (
+                PlayerPrefs.GetInt("Shape_" + ShapesManager.Shape.selectedShapeID + "_IndexReward")
+                == PlayerPrefs.GetInt(
+                    "Shape_" + ShapesManager.Shape.selectedShapeID + "_TotalReward"
+                )
+            )
+            {
+                PlayerPrefs.SetInt(
+                    "Shape_" + ShapesManager.Shape.selectedShapeID + "_Reward_Count",
+                    RewardFillController.instance.rewardLastValue
+                );
+            }
+            else
+            {
+                PlayerPrefs.SetInt("Shape_" + ID + "_Reward_Count", 0);
+                RewardFillController.instance.rewardValueIndex = 0;
+            }
+
             int l;
 
             //check IndexReward
