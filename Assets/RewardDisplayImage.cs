@@ -18,7 +18,7 @@ public class RewardDisplayImage : MonoBehaviour
             imageCollection.Add(transform.GetChild(i).transform);
         }
 
-        Invoke("startLater", 1f);
+        Invoke("startLater", 0.3f);
     }
 
     public void startLater()
