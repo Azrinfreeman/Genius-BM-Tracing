@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: dubuk_0
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 234
+        width: 581
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee55e276b410f240aa08c17007fb746
+      internalID: 76356110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dubuk_1
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 382
+        width: 391
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c802987c5575ba84f9368fc8846fbaa6
+      internalID: -579490326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dubuk_2
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 385
+        width: 385
+        height: 370
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf6164e3f07ff6c4cabd9992e118742f
+      internalID: -1352605231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dubuk_3
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 27
+        width: 366
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ac33d705ab1d304fa345a3112e96d9b
+      internalID: 510316474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dubuk_4
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 28
+        width: 388
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f22fbc5e3ef8e246a40dfbd1399b1e7
+      internalID: -432972484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +224,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      dubuk_0: 76356110
+      dubuk_1: -579490326
+      dubuk_2: -1352605231
+      dubuk_3: 510316474
+      dubuk_4: -432972484
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

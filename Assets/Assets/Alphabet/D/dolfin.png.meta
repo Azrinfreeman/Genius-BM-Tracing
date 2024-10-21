@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: dolfin_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2963.5
+        width: 2963
+        height: 2963.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66137e1b1610844458abc0330cebdc10
+      internalID: -810665586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dolfin_1
+      rect:
+        serializedVersion: 2
+        x: 2963
+        y: 2963.5
+        width: 2963
+        height: 2963.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95abb6a647b1cff4f97f0b6e7dabfdaf
+      internalID: 168382189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dolfin_2
+      rect:
+        serializedVersion: 2
+        x: 5926
+        y: 2963.5
+        width: 2963
+        height: 2963.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c7e96e746050b84c82eb61eea547a6e
+      internalID: 1427491670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dolfin_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.5
+        width: 2963
+        height: 2963.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ef1d8c3511cab4fa7042ee59567a78
+      internalID: 1102947558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dolfin_4
+      rect:
+        serializedVersion: 2
+        x: 2963
+        y: 0.5
+        width: 2963
+        height: 2963.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57cc8a30dbbe214a83b7c695a478771
+      internalID: -693846239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dolfin_5
+      rect:
+        serializedVersion: 2
+        x: 5926
+        y: 0.5
+        width: 2963
+        height: 2963.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 505b4d4fc6a49bf46ae8ca033f1d558a
+      internalID: -1974158512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +245,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      dolfin_0: -810665586
+      dolfin_1: 168382189
+      dolfin_2: 1427491670
+      dolfin_3: 1102947558
+      dolfin_4: -693846239
+      dolfin_5: -1974158512
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
