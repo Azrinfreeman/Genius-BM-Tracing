@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,116 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Fabrik_0
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 925
+        width: 383
+        height: 578
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41.5, y: 294.5}
+        - {x: -179.5, y: 44.5}
+        - {x: -179.5, y: -287.5}
+        - {x: -74.5, y: -287.5}
+        - {x: 207.5, y: 228.5}
+        - {x: 207.5, y: 294.5}
+      physicsShape:
+      - - {x: -225.5, y: -296.5}
+        - {x: -225.5, y: 296.5}
+        - {x: 225.5, y: 296.5}
+        - {x: -79.5, y: -296.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a021dabff0287347a4820045e2fac4b
+      internalID: 765651771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fabrik_1
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 925
+        width: 475
+        height: 577
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.5, y: 288.5}
+        - {x: -237.5, y: -70.5}
+        - {x: -237.5, y: -234.5}
+        - {x: -101.5, y: -288.5}
+        - {x: 115.5, y: -288.5}
+        - {x: 237.5, y: -44.5}
+        - {x: 237.5, y: 288.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 962d43b9f3283c74588c17aa511dcb76
+      internalID: 1351598103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fabrik_2
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 918
+        width: 400
+        height: 580
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 57, y: 290}
+        - {x: -200, y: -117}
+        - {x: -200, y: -203}
+        - {x: -189, y: -243}
+        - {x: -11, y: -290}
+        - {x: 150, y: -290}
+        - {x: 200, y: -256}
+        - {x: 200, y: 290}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4c6dea043455746bd6b0d45ad56bbd
+      internalID: 590144523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fabrik_3
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 931
+        width: 316
+        height: 569
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2b3d93aafd5f2847aa3d85bc7507e4d
+      internalID: -717663632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +228,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fabrik_0: 765651771
+      Fabrik_1: 1351598103
+      Fabrik_2: 590144523
+      Fabrik_3: -717663632
+      Fabrik_4: 1753701396
+      Fabrik_5: 1223370826
+      Fabrik_6: -1236930591
+      Fabrik_7: 1881550118
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

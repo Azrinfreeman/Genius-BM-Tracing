@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,288 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Flamingo_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 889.5
+        width: 593
+        height: 889.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 206.5, y: 260.5}
+        - {x: 102.5, y: 260.5}
+        - {x: -48.5, y: 99.5}
+        - {x: -48.5, y: -183.5}
+        - {x: 44.5, y: -333.5}
+        - {x: 217.5, y: -333.5}
+        - {x: 265.5, y: -198.5}
+        - {x: 265.5, y: 217.5}
+        - {x: 261.5, y: 226.5}
+      - - {x: 128.5, y: -157.5}
+        - {x: 121.5, y: -153.5}
+        - {x: 114.5, y: -150.5}
+        - {x: 112.5, y: -148.5}
+        - {x: 105.5, y: -145.5}
+        - {x: 103.5, y: -143.5}
+        - {x: 96.5, y: -140.5}
+        - {x: 94.5, y: -138.5}
+        - {x: 87.5, y: -135.5}
+        - {x: 85.5, y: -133.5}
+        - {x: 78.5, y: -130.5}
+        - {x: 76.5, y: -128.5}
+        - {x: 68.5, y: -125.5}
+        - {x: 69.5, y: -124.5}
+        - {x: 73.5, y: -112.5}
+        - {x: 84.5, y: -78.5}
+        - {x: 86.5, y: -72.5}
+        - {x: 98.5, y: -35.5}
+        - {x: 100.5, y: -29.5}
+        - {x: 100.5, y: -27.5}
+        - {x: 103.5, y: -28.5}
+        - {x: 107.5, y: -29.5}
+        - {x: 112.5, y: -30.5}
+        - {x: 116.5, y: -31.5}
+        - {x: 126.5, y: -33.5}
+        - {x: 130.5, y: -33.5}
+        - {x: 131.5, y: -160.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13bf41ded02efd140a4b1784d852a99a
+      internalID: 1422942941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flamingo_1
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 890
+        width: 547
+        height: 889
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -97.5, y: 149.5}
+        - {x: -83.5, y: 164.5}
+        - {x: -141.5, y: 84.5}
+        - {x: -141.5, y: -180.5}
+        - {x: -117.5, y: -333.5}
+        - {x: 100.5, y: -333.5}
+        - {x: 171.5, y: -256.5}
+        - {x: 171.5, y: 132.5}
+        - {x: -18.5, y: 260.5}
+        - {x: -75.5, y: 260.5}
+        - {x: -118.5, y: 201.5}
+      - - {x: -6.5, y: -33.5}
+        - {x: -2.5, y: -33.5}
+        - {x: 2.5, y: -32.5}
+        - {x: 10.5, y: -30.5}
+        - {x: 10.5, y: -319.5}
+        - {x: -6.5, y: -319.5}
+      - - {x: 285.5, y: -192.5}
+        - {x: 281.5, y: -199.5}
+        - {x: 281.5, y: -278.5}
+        - {x: 285.5, y: -288.5}
+        - {x: 296.5, y: -288.5}
+        - {x: 296.5, y: -192.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9afe66b5a32717a40850073ed7c09a20
+      internalID: 1543446522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flamingo_2
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 890
+        width: 633
+        height: 889
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 92.5, y: 17.5}
+        - {x: 92.5, y: 72.5}
+        - {x: 49.5, y: 123.5}
+        - {x: -161.5, y: 123.5}
+        - {x: -259.5, y: 105.5}
+        - {x: -293.5, y: -65.5}
+        - {x: -296.5, y: -84.5}
+        - {x: -296.5, y: -333.5}
+        - {x: -123.5, y: -333.5}
+        - {x: -46.5, y: -148.5}
+        - {x: -46.5, y: -142.5}
+        - {x: -56.5, y: -110.5}
+      - - {x: -123.5, y: -70.5}
+        - {x: -116.5, y: -70.5}
+        - {x: -111.5, y: -69.5}
+        - {x: -108.5, y: -68.5}
+        - {x: -101.5, y: -65.5}
+        - {x: -99.5, y: -63.5}
+        - {x: -95.5, y: -60.5}
+        - {x: -90.5, y: -56.5}
+        - {x: -90.5, y: -62.5}
+        - {x: -88.5, y: -64.5}
+        - {x: -84.5, y: -76.5}
+        - {x: -83.5, y: -80.5}
+        - {x: -72.5, y: -113.5}
+        - {x: -70.5, y: -120.5}
+        - {x: -63.5, y: -141.5}
+        - {x: -75.5, y: -146.5}
+        - {x: -77.5, y: -148.5}
+        - {x: -84.5, y: -151.5}
+        - {x: -91.5, y: -155.5}
+        - {x: -93.5, y: -157.5}
+        - {x: -100.5, y: -160.5}
+        - {x: -102.5, y: -162.5}
+        - {x: -109.5, y: -165.5}
+        - {x: -111.5, y: -167.5}
+        - {x: -118.5, y: -170.5}
+        - {x: -120.5, y: -172.5}
+        - {x: -123.5, y: -174.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8656a40cc288ca048bf0d8f0272fa67e
+      internalID: -573225266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flamingo_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 639
+        height: 890
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 282.5, y: 188}
+        - {x: 315.5, y: 179}
+        - {x: 317.5, y: 180}
+        - {x: 317.5, y: 250}
+        - {x: 190.5, y: 379}
+        - {x: -101.5, y: 379}
+        - {x: -110.5, y: 375}
+        - {x: -110.5, y: 21}
+        - {x: -18.5, y: -154}
+        - {x: 148.5, y: -154}
+        - {x: 275.5, y: 175}
+        - {x: 273.5, y: 181}
+        - {x: 263.5, y: 180}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7f41c2020efeb4993b09ad0318b397
+      internalID: -1392801082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flamingo_4
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1
+        width: 501
+        height: 890
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 191.5, y: 439}
+        - {x: -28.5, y: 439}
+        - {x: -182.5, y: 308}
+        - {x: -184.5, y: 238}
+        - {x: -184.5, y: 159}
+        - {x: -181.5, y: 155}
+        - {x: -149.5, y: 172}
+        - {x: -148.5, y: 173}
+        - {x: -140.5, y: 174}
+        - {x: -142.5, y: 174}
+        - {x: -157.5, y: 159}
+        - {x: -162.5, y: 153}
+        - {x: -169.5, y: 138}
+        - {x: -172.5, y: 129}
+        - {x: -173.5, y: 123}
+        - {x: -171.5, y: 121}
+        - {x: -168.5, y: 121}
+        - {x: -113.5, y: -158}
+        - {x: 98.5, y: -158}
+        - {x: 164.5, y: -128}
+        - {x: 191.5, y: 76}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34878df1575663340b74b5cfee2cc64a
+      internalID: 904752124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flamingo_5
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 0
+        width: 636
+        height: 890
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46, y: -157}
+        - {x: 77, y: 0}
+        - {x: 77, y: 193}
+        - {x: 53, y: 212}
+        - {x: -52, y: 274}
+        - {x: -124, y: 250}
+        - {x: -135, y: 391}
+        - {x: -180, y: 445}
+        - {x: -258, y: 445}
+        - {x: -287, y: 417}
+        - {x: -287, y: 363}
+        - {x: -271, y: 329}
+        - {x: -249, y: 321}
+        - {x: -224, y: 319}
+        - {x: -220, y: 323}
+        - {x: -220, y: 331}
+        - {x: -192, y: 351}
+        - {x: -274, y: 268}
+        - {x: -208, y: -157}
+        - {x: -132, y: -157}
+        - {x: -73, y: 111}
+        - {x: -110, y: -146}
+        - {x: -106, y: -157}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3631949d84f05414dbe4eaafc9099919
+      internalID: -1718622150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +400,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Flamingo_0: 1422942941
+      Flamingo_1: 1543446522
+      Flamingo_2: -573225266
+      Flamingo_3: -1392801082
+      Flamingo_4: 904752124
+      Flamingo_5: -1718622150
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
