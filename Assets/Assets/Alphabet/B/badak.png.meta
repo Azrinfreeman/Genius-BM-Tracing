@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: badak_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 837.3334
+        width: 553.5
+        height: 418.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2251bd94f844f949ba8917c915dd568
+      internalID: 2058224290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badak_1
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 837.3334
+        width: 553.5
+        height: 418.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c725adb8fe4a04bb8a7a5da5b1fa7c
+      internalID: -673753170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badak_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 419.33334
+        width: 553.5
+        height: 418.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a5a4df0416cc4347914c4e3018beb89
+      internalID: -921843750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badak_3
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 419.33334
+        width: 553.5
+        height: 418.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b64efefa166a75a40918980724c6d99a
+      internalID: -748192980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badak_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.3333435
+        width: 553.5
+        height: 418.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea2fee1edd027ac45964d400ca56c4fd
+      internalID: 320824702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badak_5
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 1.3333435
+        width: 553.5
+        height: 418.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b2cb5fcca9d9ab4d85e68889cb6ffba
+      internalID: 2060797081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +245,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      badak_0: 2058224290
+      badak_1: -673753170
+      badak_2: -921843750
+      badak_3: -748192980
+      badak_4: 320824702
+      badak_5: 2060797081
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

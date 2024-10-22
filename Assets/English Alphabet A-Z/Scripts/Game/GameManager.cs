@@ -747,7 +747,20 @@ public class GameManager : MonoBehaviour
         }
 
         //add code for getting rewards
-        RewardFillController.instance.GetReward();
+        if (
+            PlayerPrefs.GetInt("Shape_" + ShapesManager.Shape.selectedShapeID + "_IndexReward")
+            == PlayerPrefs.GetInt("Shape_" + ShapesManager.Shape.selectedShapeID + "_TotalReward")
+        )
+        {
+            PlayerPrefs.SetInt(
+                "Shape_" + ShapesManager.Shape.selectedShapeID + "_Reward_Count",
+                RewardFillController.instance.rewardLastValue
+            );
+        }
+        else
+        {
+            RewardFillController.instance.GetReward();
+        }
     }
 
     /// <summary>

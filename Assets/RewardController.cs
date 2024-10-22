@@ -19,9 +19,27 @@ public class RewardController : MonoBehaviour
 
     void Initiate()
     {
+        int index = ShapesManager.Shape.selectedShapeID;
+
+        //hide all rewards first of all
         for (int i = 0; i < transform.childCount; i++)
         {
-            HaiwanTotal.Add(transform.GetChild(i));
+            transform.GetChild(i).gameObject.SetActive(false);
+        }
+
+        //enable reward only for selected index level reward
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            if (i == ShapesManager.Shape.selectedShapeID)
+            {
+                transform.GetChild(i).gameObject.SetActive(true);
+            }
+        }
+
+        //add animals into variable HaiwanTotal
+        for (int i = 0; i < transform.GetChild(index).childCount; i++)
+        {
+            HaiwanTotal.Add(transform.GetChild(index).GetChild(i));
             HaiwanTotal[i].gameObject.SetActive(false);
         }
         DataManager.SaveTotalRewardShape(ShapesManager.Shape.selectedShapeID, HaiwanTotal.Count);
@@ -29,7 +47,13 @@ public class RewardController : MonoBehaviour
 
     public Sprite AssignImage(int indexReward)
     {
-        return transform.GetChild(indexReward).GetChild(0).GetComponent<Image>().sprite;
+        //seek child in REward Haiwan, find child based on index shape, then get the child count of that indexShape
+        return transform
+            .GetChild(ShapesManager.Shape.selectedShapeID)
+            .transform.GetChild(indexReward)
+            .GetChild(0)
+            .GetComponent<Image>()
+            .sprite;
     }
 
     // Start is called before the first frame update
@@ -48,7 +72,10 @@ public class RewardController : MonoBehaviour
             );
             for (int l = 0; l < i; l++)
             {
-                transform.GetChild(l).gameObject.SetActive(true);
+                transform
+                    .GetChild(ShapesManager.Shape.selectedShapeID)
+                    .transform.GetChild(l)
+                    .gameObject.SetActive(true);
             }
         }
     }

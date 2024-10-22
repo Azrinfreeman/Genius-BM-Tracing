@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -53,7 +53,7 @@ TextureImporter:
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -108,18 +108,66 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
-    outline: []
+    sprites:
+    - serializedVersion: 2
+      name: cimpanzi_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 136
+        width: 455
+        height: 754
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 98.98044, y: -106.368225}
+        - {x: 227.5, y: -166.8529}
+        - {x: 209.05264, y: -224.79907}
+        - {x: 108.69949, y: -251.50845}
+        - {x: 21.327972, y: -186.45447}
+        - {x: -36.528656, y: -253.10754}
+        - {x: -60.93611, y: -275.05624}
+        - {x: -27.590149, y: -328.7038}
+        - {x: -74.25334, y: -374.0335}
+        - {x: -109.603264, y: -351.73642}
+        - {x: -227.5, y: 274.7442}
+        - {x: -227.5, y: 377}
+        - {x: 175.76978, y: 377}
+        - {x: 150.04794, y: 142.39825}
+        - {x: 189.49057, y: 95.93573}
+        - {x: 145.94919, y: -69.20294}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 541c8755875013844826b12b98c0a3dc
+      internalID: -347832924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: -365.79968, y: -182.68903}
+      - {x: -527.23584, y: -180.75403}
+      - {x: -518.0841, y: -282.60675}
+      - {x: -589.4987, y: -296.8837}
+      - {x: -711.5, y: -265.6008}
+      - {x: -711.5, y: 445}
+      - {x: -298.8009, y: 445}
+      - {x: -292.1862, y: 169.0263}
+      - {x: -312.1385, y: 74.68628}
+      - {x: -247.81503, y: -149.40039}
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cimpanzi_0: -347832924
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,149 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Arnab_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 889
+        width: 889.3333
+        height: 889
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -444.5}
+        - {x: 1334, y: 0}
+        - {x: 0, y: 444.5}
+        - {x: -1334, y: 0}
+      physicsShape:
+      - - {x: 0, y: -444.5}
+        - {x: 1334, y: 0}
+        - {x: 0, y: 444.5}
+        - {x: -1334, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3cbb0e7c6acd1c4396e8032a95abb9f
+      internalID: 1578812430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arnab_1
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 889
+        width: 825
+        height: 889
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -444.5}
+        - {x: 1334, y: 0}
+        - {x: 0, y: 444.5}
+        - {x: -1334, y: 0}
+      physicsShape:
+      - - {x: 0, y: -444.5}
+        - {x: 1334, y: 0}
+        - {x: 0, y: 444.5}
+        - {x: -1334, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc753b387f7c15f49a87bf21472fb06c
+      internalID: -1936594787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arnab_2
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 887
+        width: 951
+        height: 889
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 588fb3b133ae70f499c25a6021df6b5b
+      internalID: -1710350939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arnab_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 297
+        width: 889
+        height: 592
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5366310d46f325649b5704713184671d
+      internalID: 1956659291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arnab_4
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 295
+        width: 889
+        height: 594
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fecd0bb078628be44810b6e4c1d395c1
+      internalID: 511545100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arnab_5
+      rect:
+        serializedVersion: 2
+        x: 1778
+        y: 293
+        width: 889
+        height: 596
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80496e5095bf4f04fbadf89103ecac75
+      internalID: -1967454102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +261,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Arnab_0: 1578812430
+      Arnab_1: -1936594787
+      Arnab_2: -1710350939
+      Arnab_3: 1956659291
+      Arnab_4: 511545100
+      Arnab_5: -1967454102
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
