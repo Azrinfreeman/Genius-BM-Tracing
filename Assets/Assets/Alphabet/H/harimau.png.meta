@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,511 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: harimau_1
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 894
+        width: 877
+        height: 633
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b19f797e7d2226f45878ec9222f35687
+      internalID: 910790059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: harimau_4
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 139
+        width: 52
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64be6cf944df68645b068a64fb5c78c9
+      internalID: 1040736180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: harimau_5
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 168
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c224cad8d38db458f05cc921a322bb
+      internalID: -1003807616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: harimau_6
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 156
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d381e1e14448fc44bf959e237846a40
+      internalID: 1235132467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: harimau_7
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 130
+        width: 20
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52d5df57d3464241a4c1fbc6daaf966
+      internalID: 2144482375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: harimau_8
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 159
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b6841dcac7e01142a1456bde054abc0
+      internalID: 777267419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: harimau_9
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 130
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99a23be58be0bcc45b2890cd41708f29
+      internalID: -1501061144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: harimau_10
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 129
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b8d0d13e641a446a96f9666ee8a520
+      internalID: -1806185519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: harimau_11
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 159
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a9b12f6b07b104994622338ebd743a
+      internalID: 825306464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: harimau_12
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 129
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fb6b17939a44f5499cc4da019886e6e
+      internalID: 997459471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: harimau_13
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 129
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856e1189db2b1a04faf5c439b979c488
+      internalID: -938201395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: harimau_14
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 129
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ffafd23731d0f64aa0c7f4a5f8ca9f9
+      internalID: 229242017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: harimau_15
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 129
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 116cbddad5fe3e9458a5606fe3af1433
+      internalID: -1573461633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: harimau_16
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 130
+        width: 5
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f97d7b2b743a7a1489bfc6a690474e97
+      internalID: -1471322203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: harimau_17
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 120
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2881ba49685e3b47b6a0292412b3ac1
+      internalID: 2082365247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: harimau_18
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 130
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2730a67529f866a429a6c54ac2456369
+      internalID: -723904306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: harimau_19
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 129
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc47aaa9035a1d749b2ee68c768b669a
+      internalID: 966684337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: harimau_20
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 120
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058c6126c321a964594657a778f38020
+      internalID: -946959470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: harimau_21
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 127
+        width: 41
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee76318bdacdb9144b932ed4a06be5cc
+      internalID: -1705440699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: harimau_22
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 130
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 370651ac171bf2845bd7670e97837108
+      internalID: 1255629158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: harimau_23
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 129
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d199b761444624c4db82c4e67b6ef58c
+      internalID: -1746214173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: harimau_24
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 129
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d814e6fde2cb8e74bac480c981d62895
+      internalID: -1491129048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: harimau_25
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 119
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d91f02f811cb6f4c9cc9933d92c9058
+      internalID: -1580575324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: harimau_26
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 130
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae1bbff16601f74aa9bd06be1c1704d
+      internalID: -249382029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +623,34 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      harimau_0: 1984873979
+      harimau_1: 910790059
+      harimau_10: -1806185519
+      harimau_11: 825306464
+      harimau_12: 997459471
+      harimau_13: -938201395
+      harimau_14: 229242017
+      harimau_15: -1573461633
+      harimau_16: -1471322203
+      harimau_17: 2082365247
+      harimau_18: -723904306
+      harimau_19: 966684337
+      harimau_2: -234776692
+      harimau_20: -946959470
+      harimau_21: -1705440699
+      harimau_22: 1255629158
+      harimau_23: -1746214173
+      harimau_24: -1491129048
+      harimau_25: -1580575324
+      harimau_26: -249382029
+      harimau_3: 665602037
+      harimau_4: 1040736180
+      harimau_5: -1003807616
+      harimau_6: 1235132467
+      harimau_7: 2144482375
+      harimau_8: 777267419
+      harimau_9: -1501061144
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

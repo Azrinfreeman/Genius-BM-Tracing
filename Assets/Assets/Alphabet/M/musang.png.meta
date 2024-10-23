@@ -1,0 +1,226 @@
+fileFormatVersion: 2
+guid: 2a285e3d9bee65f4b873ac66f6b14470
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: musang_0
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 772
+        width: 437
+        height: 837
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 200.5, y: 418.5}
+        - {x: -218.5, y: 418.5}
+        - {x: -218.5, y: -413.5}
+        - {x: -102.5, y: -412.5}
+        - {x: -53.5, y: -323.5}
+        - {x: 208.5, y: -299.5}
+        - {x: 218.5, y: -283.5}
+        - {x: 218.5, y: 339.5}
+        - {x: 209.5, y: 415.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a1aeeb25148bf54a9bd35f88a755da1
+      internalID: -2078189299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musang_2
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 147
+        width: 617
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 231.5, y: 324}
+        - {x: 217.5, y: 317}
+        - {x: 158.5, y: 286}
+        - {x: -29.5, y: 324}
+        - {x: -90.5, y: 324}
+        - {x: -106.5, y: 94}
+        - {x: -28.5, y: 64}
+        - {x: -69.5, y: 60}
+        - {x: -179.5, y: 146}
+        - {x: -269.5, y: 127}
+        - {x: -308.5, y: 94}
+        - {x: -308.5, y: 68}
+        - {x: -184.5, y: -230}
+        - {x: -134.5, y: -324}
+        - {x: 308.5, y: -324}
+        - {x: 308.5, y: 312}
+        - {x: 296.5, y: 324}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2edaebfd8574d884089e53ea6614c27a
+      internalID: 1070232468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musang_3
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 115
+        width: 582
+        height: 671
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 64, y: -320.5}
+        - {x: 283, y: -309.5}
+        - {x: 269, y: 169.5}
+        - {x: 223, y: 335.5}
+        - {x: -288, y: 334.5}
+        - {x: -291, y: -335.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 542c9109c9f0f924aa11e2820a067a69
+      internalID: 1552874391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      musang_0: -2078189299
+      musang_1: -320224775
+      musang_2: 1070232468
+      musang_3: 1552874391
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
