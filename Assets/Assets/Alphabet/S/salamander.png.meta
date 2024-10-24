@@ -1,0 +1,264 @@
+fileFormatVersion: 2
+guid: 8495caecdc8ed7b48b6f8f1f4df429bc
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: salamander_0
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 2684
+        width: 1793
+        height: 1616
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 799.46094, y: 762.0077}
+        - {x: 619.8125, y: 808}
+        - {x: -733.7031, y: 808}
+        - {x: -642.64844, y: 643.8827}
+        - {x: -598.35156, y: 579.8983}
+        - {x: -551.59375, y: 530.67957}
+        - {x: -512.21875, y: 501.14835}
+        - {x: -699.25, y: 616.8124}
+        - {x: -780.46094, y: 641.42175}
+        - {x: -896.125, y: 636.4999}
+        - {x: -896.125, y: -734.24225}
+        - {x: -795.22656, y: -808}
+        - {x: 472.15625, y: -808}
+        - {x: 649.34375, y: -778.5391}
+        - {x: 890.5156, y: -662.87506}
+        - {x: 896.5, y: -493}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4f4b4633f61e9b4f84cb8d12400cf15
+      internalID: -446448460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salamander_1
+      rect:
+        serializedVersion: 2
+        x: 2270
+        y: 3073
+        width: 2468
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 244.64848, y: 524}
+        - {x: 1.0156775, y: 517.3166}
+        - {x: -533.00775, y: 450.87125}
+        - {x: -1234, y: -154.51935}
+        - {x: -1234, y: -454.75372}
+        - {x: -1182.6952, y: -523.66}
+        - {x: 786.05475, y: -523.66}
+        - {x: 1234, y: -149.59747}
+        - {x: 1234, y: 192.47282}
+        - {x: 926.3282, y: 524}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da50222fe06ff6b4e868e53f090cdc50
+      internalID: -7006591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salamander_2
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 845
+        width: 2003
+        height: 1374
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 492.01175, y: -332.5586}
+        - {x: 474.7852, y: -275.95703}
+        - {x: 430.4883, y: -236.58202}
+        - {x: 851.30865, y: -251.34764}
+        - {x: 962.0508, y: -202.12889}
+        - {x: 1001.5, y: -39.707024}
+        - {x: 1001.5, y: 501.69922}
+        - {x: 777.4805, y: 687}
+        - {x: 149.94145, y: 687}
+        - {x: -925.4882, y: 501.69922}
+        - {x: -1001.5, y: 191.6211}
+        - {x: -1001.5, y: -514.66797}
+        - {x: -760.6054, y: -686.9336}
+        - {x: 354.19925, y: -686.9336}
+        - {x: 327.12894, y: -475.29297}
+        - {x: 41.6602, y: -389.16016}
+        - {x: 452.63675, y: -386.69922}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656c685b26a0acb4592bd7b176e4b7a3
+      internalID: -1608649950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salamander_3
+      rect:
+        serializedVersion: 2
+        x: 2972
+        y: 742
+        width: 1477
+        height: 1917
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -737.8634, y: 958.5}
+        - {x: -737.8634, y: -958.5}
+        - {x: 640.2616, y: -958.5}
+        - {x: 738.5, y: -941.28125}
+        - {x: 738.5, y: 710.0078}
+        - {x: 271.121, y: 958.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b28256da76fa92438ef6f756b312162
+      internalID: -672134211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      salamander_0: -446448460
+      salamander_1: -7006591
+      salamander_2: -1608649950
+      salamander_3: -672134211
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
