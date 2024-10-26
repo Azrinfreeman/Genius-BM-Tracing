@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f3167cadf118f0e448e63fce300f9737
+guid: 1596966acd219134996fa49f2819f932
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,22 +110,90 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: vinyl_0
+      name: zaitun_1
       rect:
         serializedVersion: 2
-        x: 179
-        y: 165
-        width: 1269
-        height: 1232
+        x: 203
+        y: 376
+        width: 283
+        height: 210
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 2.5, y: 105}
+        - {x: -141.5, y: -1}
+        - {x: -141.5, y: -56}
+        - {x: -84.5, y: -98}
+        - {x: 78.5, y: -98}
+        - {x: 122.5, y: -90}
+        - {x: 122.5, y: 6}
+        - {x: 22.5, y: 105}
+      - - {x: -2.5, y: -20}
+        - {x: 0.5, y: -13}
+        - {x: 2.5, y: -16}
+        - {x: 2.5, y: -17}
+        - {x: 4.5, y: -19}
+        - {x: 4.5, y: -21}
+        - {x: 5.5, y: -22}
+        - {x: 2.5, y: -25}
+      - - {x: 32.5, y: -18}
+        - {x: 29.5, y: -17}
+        - {x: 19.5, y: -16}
+        - {x: 18.5, y: -14}
+        - {x: 14.5, y: -10}
+        - {x: 14.5, y: -9}
+        - {x: 7.5, y: -2}
+        - {x: 7.5, y: 1}
+        - {x: 10.5, y: 6}
+        - {x: 10.5, y: 8}
+        - {x: 12.5, y: 11}
+        - {x: 12.5, y: 14}
+        - {x: 13.5, y: 13}
+        - {x: 17.5, y: 8}
+        - {x: 18.5, y: 5}
+        - {x: 24.5, y: -3}
+        - {x: 25.5, y: -6}
+        - {x: 30.5, y: -12}
+        - {x: 30.5, y: -13}
+        - {x: 32.5, y: -16}
+        - {x: 34.5, y: -20}
+        - {x: 37.5, y: -21}
+        - {x: 36.5, y: -20}
+      - - {x: -23.5, y: -12}
+        - {x: -19.5, y: -12}
+        - {x: -12.5, y: -9}
+        - {x: -9.5, y: -5}
+        - {x: -11.5, y: -7}
+        - {x: -14.5, y: -12}
+        - {x: -17.5, y: -11}
+      - - {x: 57.5, y: -1}
+        - {x: 56.5, y: -1}
+        - {x: 52.5, y: 3}
+        - {x: 34.5, y: 15}
+        - {x: 29.5, y: 18}
+        - {x: 21.5, y: 22}
+        - {x: 17.5, y: 25}
+        - {x: 18.5, y: 27}
+        - {x: 20.5, y: 34}
+        - {x: 22.5, y: 42}
+        - {x: 22.5, y: 51}
+        - {x: 27.5, y: 41}
+        - {x: 32.5, y: 33}
+        - {x: 40.5, y: 21}
+        - {x: 45.5, y: 14}
+        - {x: 48.5, y: 11}
+        - {x: 54.5, y: 3}
+        - {x: 57.5, y: 0}
+        - {x: 57.5, y: -1}
+        - {x: 62.5, y: -6}
+        - {x: 63.5, y: -6}
+        - {x: 63.5, y: -5}
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc975138c2598314a8df775c386cd0ee
-      internalID: -69463183
+      spriteID: fe2ec9053ddd5f647bc008791ff8c0cc
+      internalID: 1841821482
       vertices: []
       indices: 
       edges: []
@@ -141,7 +209,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      vinyl_0: -69463183
+      zaitun_0: 223363456
+      zaitun_1: 1841821482
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

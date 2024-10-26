@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f3167cadf118f0e448e63fce300f9737
+guid: 2715ddb48f38f744195775c70eff2c62
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,22 +110,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: vinyl_0
+      name: walkie talkie_0
       rect:
         serializedVersion: 2
-        x: 179
-        y: 165
-        width: 1269
-        height: 1232
+        x: 1261
+        y: 721
+        width: 440
+        height: 940
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc975138c2598314a8df775c386cd0ee
-      internalID: -69463183
+      spriteID: 1799451a26d2bb94eb1e82e441756312
+      internalID: 1802814365
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      vinyl_0: -69463183
+      walkie talkie_0: 1802814365
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

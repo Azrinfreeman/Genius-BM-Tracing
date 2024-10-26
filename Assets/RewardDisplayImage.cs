@@ -23,7 +23,12 @@ public class RewardDisplayImage : MonoBehaviour
 
     public void startLater()
     {
+        //disable all pictures
         for (int i = 0; i < 5; i++)
+        {
+            imageCollection[i].transform.gameObject.SetActive(false);
+        }
+        for (int i = 0; i < selectedIndex.childCount; i++)
         {
             imageCollection[i]
                 .GetChild(0)
@@ -35,6 +40,7 @@ public class RewardDisplayImage : MonoBehaviour
 
             imageCollection[i].GetChild(0).transform.GetChild(0).GetComponent<Image>().color =
                 Color.black;
+            imageCollection[i].transform.gameObject.SetActive(true);
         }
 
         for (

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f3167cadf118f0e448e63fce300f9737
+guid: 5daf2054a34a8d54fb060bd96c2a17e1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: vinyl_0
+      name: yoyo_1
       rect:
         serializedVersion: 2
-        x: 179
-        y: 165
-        width: 1269
-        height: 1232
+        x: 2633
+        y: 1455
+        width: 8193
+        height: 11297
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc975138c2598314a8df775c386cd0ee
-      internalID: -69463183
+      spriteID: 63ef1d188d8657244afdef3994594007
+      internalID: -29032629
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      vinyl_0: -69463183
+      yoyo_0: 1343354517
+      yoyo_1: -29032629
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

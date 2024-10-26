@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f3167cadf118f0e448e63fce300f9737
+guid: 707eacca7c4fc1d45b9f1f646d651fe3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,22 +110,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: vinyl_0
+      name: Vacuum_0
       rect:
         serializedVersion: 2
-        x: 179
-        y: 165
-        width: 1269
-        height: 1232
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 183
+        y: 124
+        width: 1625
+        height: 1777
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc975138c2598314a8df775c386cd0ee
-      internalID: -69463183
+      spriteID: 998a569cbb503594b8ab39656070688f
+      internalID: -2140874993
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      vinyl_0: -69463183
+      Vacuum_0: -2140874993
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

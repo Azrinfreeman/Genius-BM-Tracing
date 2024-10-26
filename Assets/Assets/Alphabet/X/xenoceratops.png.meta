@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f3167cadf118f0e448e63fce300f9737
+guid: cb9cb47c99a4f884985305fc3b127bd2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: vinyl_0
+      name: xenoceratops_0
       rect:
         serializedVersion: 2
-        x: 179
-        y: 165
-        width: 1269
-        height: 1232
+        x: 33
+        y: 281
+        width: 1244
+        height: 781
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc975138c2598314a8df775c386cd0ee
-      internalID: -69463183
+      spriteID: 53b6416f6af57a04f8918d19a48f5012
+      internalID: 1378233118
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      vinyl_0: -69463183
+      xenoceratops_0: 1378233118
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

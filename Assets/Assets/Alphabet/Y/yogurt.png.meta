@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f3167cadf118f0e448e63fce300f9737
+guid: 1c6c93babe4f23042b34388131f6ba43
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: vinyl_0
+      name: yogurt_1
       rect:
         serializedVersion: 2
-        x: 179
-        y: 165
-        width: 1269
-        height: 1232
+        x: 788
+        y: 748
+        width: 431
+        height: 578
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc975138c2598314a8df775c386cd0ee
-      internalID: -69463183
+      spriteID: 1a485e6ec709ec44c9e3b03de4498f61
+      internalID: -1908647101
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      vinyl_0: -69463183
+      yogurt_0: -1142556211
+      yogurt_1: -1908647101
+      yogurt_2: 2130821674
+      yogurt_3: 256784318
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
