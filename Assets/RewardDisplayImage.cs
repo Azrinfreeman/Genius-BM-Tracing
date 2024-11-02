@@ -6,6 +6,16 @@ using UnityEngine.UI;
 
 public class RewardDisplayImage : MonoBehaviour
 {
+    public static RewardDisplayImage instance;
+
+    void Awake()
+    {
+        if (!instance)
+        {
+            instance = this;
+        }
+    }
+
     public List<Transform> imageCollection;
 
     public Transform selectedIndex;

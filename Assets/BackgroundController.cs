@@ -6,6 +6,7 @@ using UnityEngine;
 public class BackgroundController : MonoBehaviour
 {
     public List<Transform> backgroundImages;
+    public Transform Tema1_sub;
 
     [Header("Toggle Whether In Album or Game")]
     public bool inAlbum;
@@ -30,6 +31,7 @@ public class BackgroundController : MonoBehaviour
             )
             {
                 backgroundImages[0].transform.gameObject.SetActive(true);
+                Tema1_sub.gameObject.SetActive(true);
                 backgroundImages[1].transform.gameObject.SetActive(false);
                 backgroundImages[2].transform.gameObject.SetActive(false);
             }
@@ -39,6 +41,7 @@ public class BackgroundController : MonoBehaviour
             )
             {
                 backgroundImages[0].transform.gameObject.SetActive(false);
+                Tema1_sub.gameObject.SetActive(false);
                 backgroundImages[1].transform.gameObject.SetActive(true);
                 backgroundImages[2].transform.gameObject.SetActive(false);
             }
@@ -48,6 +51,7 @@ public class BackgroundController : MonoBehaviour
             )
             {
                 backgroundImages[0].transform.gameObject.SetActive(false);
+                Tema1_sub.gameObject.SetActive(false);
                 backgroundImages[1].transform.gameObject.SetActive(false);
                 backgroundImages[2].transform.gameObject.SetActive(true);
             }
@@ -60,6 +64,7 @@ public class BackgroundController : MonoBehaviour
             )
             {
                 backgroundImages[0].transform.gameObject.SetActive(true);
+                Tema1_sub.gameObject.SetActive(true);
                 backgroundImages[1].transform.gameObject.SetActive(false);
                 backgroundImages[2].transform.gameObject.SetActive(false);
             }
@@ -69,6 +74,7 @@ public class BackgroundController : MonoBehaviour
             )
             {
                 backgroundImages[0].transform.gameObject.SetActive(false);
+                Tema1_sub.gameObject.SetActive(false);
                 backgroundImages[1].transform.gameObject.SetActive(true);
                 backgroundImages[2].transform.gameObject.SetActive(false);
             }
@@ -78,6 +84,7 @@ public class BackgroundController : MonoBehaviour
             )
             {
                 backgroundImages[0].transform.gameObject.SetActive(false);
+                Tema1_sub.gameObject.SetActive(false);
                 backgroundImages[1].transform.gameObject.SetActive(false);
                 backgroundImages[2].transform.gameObject.SetActive(true);
             }
@@ -87,6 +94,7 @@ public class BackgroundController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Tema1_sub = GameObject.Find("Tema1 (1)").GetComponent<Transform>();
         InitiateImages();
     }
 

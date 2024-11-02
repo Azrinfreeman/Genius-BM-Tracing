@@ -58,6 +58,7 @@ public class UIEvents : MonoBehaviour
 
     public void LoadAlbumScene()
     {
+        DataManager.CheckRewardShape(ShapesManager.Shape.selectedShapeID);
         StartCoroutine(SceneLoader.LoadSceneAsync("Album"));
     }
 
@@ -85,6 +86,7 @@ public class UIEvents : MonoBehaviour
         }
         else
         {
+            RewardFillController.instance.HideReward();
             DataManager.CheckRewardShape(ShapesManager.Shape.selectedShapeID);
             GameManager.instance.ResetShape();
         }

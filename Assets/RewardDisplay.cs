@@ -32,6 +32,9 @@ public class RewardDisplay : MonoBehaviour
         currentIndexShape = ScrollSlider.instance.currentGroupIndex;
 
         text.text =
-            PlayerPrefs.GetInt("Shape_" + currentIndexShape + "_IndexReward") + "" + "/" + "5";
+            PlayerPrefs.GetInt("Shape_" + currentIndexShape + "_IndexReward")
+            + ""
+            + "/"
+            + RewardDisplayImage.instance.selectedIndex.childCount;
     }
 }
