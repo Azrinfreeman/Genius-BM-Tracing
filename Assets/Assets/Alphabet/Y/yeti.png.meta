@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f3167cadf118f0e448e63fce300f9737
+guid: 2d780d5d9f053b24a8b15f31482fc671
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: vinyl_0
+      name: yeti_0
       rect:
         serializedVersion: 2
-        x: 179
-        y: 165
-        width: 1269
-        height: 1232
+        x: 254
+        y: 916
+        width: 527
+        height: 738
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc975138c2598314a8df775c386cd0ee
-      internalID: -69463183
+      spriteID: 29e28368848142445838b4989590a716
+      internalID: -1733868054
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      vinyl_0: -69463183
+      yeti_0: -1733868054
+      yeti_1: -746572153
+      yeti_2: -949447203
+      yeti_3: 1884884212
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

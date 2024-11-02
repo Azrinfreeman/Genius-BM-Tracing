@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f3167cadf118f0e448e63fce300f9737
+guid: d73769630c6d06044beda1e02ce035d1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,22 +110,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: vinyl_0
+      name: xilogram_0
       rect:
         serializedVersion: 2
-        x: 179
-        y: 165
-        width: 1269
-        height: 1232
+        x: 117
+        y: 120
+        width: 2417
+        height: 1513
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc975138c2598314a8df775c386cd0ee
-      internalID: -69463183
+      spriteID: 9744ed54f9455d34b921647bcc5ead2a
+      internalID: 270844185
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,31 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      vinyl_0: -69463183
+      xilogram_0: 270844185
+      xilogram_1: 1304026729
+      xilogram_10: -1744509841
+      xilogram_11: 1720642763
+      xilogram_12: -128036097
+      xilogram_13: -1968126155
+      xilogram_14: -92923088
+      xilogram_15: -1641663221
+      xilogram_16: 760798670
+      xilogram_17: 364661474
+      xilogram_18: -91338392
+      xilogram_19: 2085420087
+      xilogram_2: -1603115389
+      xilogram_20: -193011299
+      xilogram_21: 1415719694
+      xilogram_22: -632850614
+      xilogram_23: 1829655051
+      xilogram_24: 215508966
+      xilogram_3: -1616457772
+      xilogram_4: 1711893645
+      xilogram_5: -262132013
+      xilogram_6: -403156763
+      xilogram_7: -1186183129
+      xilogram_8: -484477290
+      xilogram_9: 552295492
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

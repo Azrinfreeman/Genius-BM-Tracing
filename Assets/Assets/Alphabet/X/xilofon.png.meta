@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f3167cadf118f0e448e63fce300f9737
+guid: 972a5b334cc246c4099097e79c7c06f0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: vinyl_0
+      name: xilofon_0
       rect:
         serializedVersion: 2
-        x: 179
-        y: 165
-        width: 1269
-        height: 1232
+        x: 147
+        y: 691
+        width: 2822
+        height: 2278
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc975138c2598314a8df775c386cd0ee
-      internalID: -69463183
+      spriteID: 8a732f88e81f46341886c85ec3d80855
+      internalID: 1414746431
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      vinyl_0: -69463183
+      xilofon_0: 1414746431
+      xilofon_1: -897530649
+      xilofon_2: -139542259
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
