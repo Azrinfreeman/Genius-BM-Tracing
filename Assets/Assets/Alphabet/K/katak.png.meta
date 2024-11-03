@@ -45,7 +45,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -113,14 +113,25 @@ TextureImporter:
       name: katak_0
       rect:
         serializedVersion: 2
-        x: 169
-        y: 5073
+        x: 176
+        y: 5030
         width: 2449
-        height: 2039
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 1959
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 495.4297, y: 784.26965}
+        - {x: -372.73434, y: 784.26965}
+        - {x: -466.49606, y: 628.0001}
+        - {x: -1122.828, y: -323.50766}
+        - {x: -1122.828, y: -840.9334}
+        - {x: -945.7226, y: -1000.6756}
+        - {x: -657.4921, y: -1018.0389}
+        - {x: 811.4414, y: -1018.0389}
+        - {x: 1137.8711, y: -833.9881}
+        - {x: 1137.8711, y: -375.5975}
+        - {x: 568.35547, y: 669.672}
       physicsShape: []
       tessellationDetail: 0
       bones: []

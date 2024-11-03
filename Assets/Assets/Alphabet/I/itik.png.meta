@@ -45,7 +45,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -113,9 +113,9 @@ TextureImporter:
       name: itik_0
       rect:
         serializedVersion: 2
-        x: 653
+        x: 630
         y: 2139
-        width: 1079
+        width: 1116
         height: 1652
       alignment: 7
       pivot: {x: 0.5, y: 0}

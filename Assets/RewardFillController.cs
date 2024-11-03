@@ -1,4 +1,4 @@
- using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -135,6 +135,18 @@ public class RewardFillController : MonoBehaviour
             RewardController.instance.AssignImage(
                 PlayerPrefs.GetInt("Shape_" + ShapesManager.Shape.selectedShapeID + "_IndexReward")
             );
+
+        RewardDialog
+            .transform.GetChild(0)
+            .transform.GetChild(0)
+            .GetComponent<TextMeshProUGUI>()
+            .text = RewardController
+            .instance
+            .HaiwanTotal[
+                PlayerPrefs.GetInt("Shape_" + ShapesManager.Shape.selectedShapeID + "_IndexReward")
+            ]
+            .name;
+
         RewardDialog.transform.GetChild(0).GetComponent<Image>().preserveAspect = true;
     }
 
