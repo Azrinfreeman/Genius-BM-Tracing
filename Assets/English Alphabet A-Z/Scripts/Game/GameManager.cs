@@ -317,6 +317,7 @@ public class GameManager : MonoBehaviour
             }
 
             ShapesManager.Shape.selectedShapeID++;
+            RewardController.instance.Initiate();
             CreateShape(); //Create new shape
         }
         else
@@ -351,6 +352,7 @@ public class GameManager : MonoBehaviour
         )
         {
             ShapesManager.Shape.selectedShapeID--;
+            RewardController.instance.Initiate();
             CreateShape();
         }
         else

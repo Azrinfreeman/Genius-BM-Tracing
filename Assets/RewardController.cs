@@ -17,8 +17,9 @@ public class RewardController : MonoBehaviour
 
     public List<Transform> HaiwanTotal;
 
-    void Initiate()
+    public void Initiate()
     {
+        HaiwanTotal.Clear();
         int index = ShapesManager.Shape.selectedShapeID;
 
         //hide all rewards first of all

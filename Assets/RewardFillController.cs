@@ -18,6 +18,9 @@ public class RewardFillController : MonoBehaviour
     }
 
     [SerializeField]
+    private Transform RewardDialog;
+
+    [SerializeField]
     private Slider slider;
 
     [SerializeField]
@@ -31,6 +34,7 @@ public class RewardFillController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        RewardDialog = GameObject.Find("RewardDialog").GetComponent<Transform>();
         imageReward = transform.GetChild(1).transform.GetChild(1).GetComponent<Image>();
         rewardLastValue = 5;
         slider = transform.GetChild(0).GetComponent<Slider>();
@@ -39,12 +43,18 @@ public class RewardFillController : MonoBehaviour
         //assign value to index equals to certain current game shape id
         rewardValueIndex = DataManager.GetRewardShape(ShapesManager.Shape.selectedShapeID);
         slider.maxValue = rewardLastValue;
+
+        Invoke("CheckIfRewardDone", 0.2f);
     }
 
     // Update is called once per frame
     void Update()
     {
         //DataManager.CheckRewardShape(ShapesManager.Shape.selectedShapeID);
+        rewardValueIndex = PlayerPrefs.GetInt(
+            "Shape_" + ShapesManager.Shape.selectedShapeID + "_Reward_Count"
+        );
+
         slider.value = rewardValueIndex;
         valueText.text = rewardValueIndex.ToString() + " / " + rewardLastValue.ToString();
 
@@ -54,6 +64,7 @@ public class RewardFillController : MonoBehaviour
             != PlayerPrefs.GetInt("Shape_" + ShapesManager.Shape.selectedShapeID + "_TotalReward")
         )
         {
+            imageReward.GetComponent<Transform>().gameObject.SetActive(true);
             imageReward.sprite = RewardController.instance.AssignImage(
                 PlayerPrefs.GetInt("Shape_" + ShapesManager.Shape.selectedShapeID + "_IndexReward")
             );
@@ -74,6 +85,74 @@ public class RewardFillController : MonoBehaviour
                 rewardLastValue
             );
         }
+
+        if (
+            PlayerPrefs.GetInt("Shape_" + ShapesManager.Shape.selectedShapeID + "_Reward_Count")
+            >= rewardLastValue
+        )
+        {
+            if (
+                PlayerPrefs.GetInt("Shape_" + ShapesManager.Shape.selectedShapeID + "_IndexReward")
+                != PlayerPrefs.GetInt(
+                    "Shape_" + ShapesManager.Shape.selectedShapeID + "_TotalReward"
+                )
+            )
+            {
+                Debug.Log("GetAnimal");
+                ShowReward();
+                //Invoke("CheckIfRewardDone", 1.2f);
+            }
+        }
+    }
+
+    public void CheckIfRewardDone()
+    {
+        if (
+            PlayerPrefs.GetInt("Shape_" + ShapesManager.Shape.selectedShapeID + "_Reward_Count")
+            >= rewardLastValue
+        )
+        {
+            if (
+                PlayerPrefs.GetInt("Shape_" + ShapesManager.Shape.selectedShapeID + "_IndexReward")
+                != PlayerPrefs.GetInt(
+                    "Shape_" + ShapesManager.Shape.selectedShapeID + "_TotalReward"
+                )
+            )
+            {
+                rewardValueIndex = 0;
+                PlayerPrefs.SetInt(
+                    "Shape_" + ShapesManager.Shape.selectedShapeID + "_Reward_Count",
+                    rewardValueIndex
+                );
+            }
+        }
+    }
+
+    public void ShowReward()
+    {
+        RewardDialog.GetComponent<Animator>().Play("OnDisplay");
+        RewardDialog.transform.GetChild(0).GetComponent<Image>().sprite =
+            RewardController.instance.AssignImage(
+                PlayerPrefs.GetInt("Shape_" + ShapesManager.Shape.selectedShapeID + "_IndexReward")
+            );
+
+        RewardDialog
+            .transform.GetChild(0)
+            .transform.GetChild(0)
+            .GetComponent<TextMeshProUGUI>()
+            .text = RewardController
+            .instance
+            .HaiwanTotal[
+                PlayerPrefs.GetInt("Shape_" + ShapesManager.Shape.selectedShapeID + "_IndexReward")
+            ]
+            .name;
+
+        RewardDialog.transform.GetChild(0).GetComponent<Image>().preserveAspect = true;
+    }
+
+    public void HideReward()
+    {
+        RewardDialog.GetComponent<Animator>().Play("OffDisplay");
     }
 
     public void GetReward()
