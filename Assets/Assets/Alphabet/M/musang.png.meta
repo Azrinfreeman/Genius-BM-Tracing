@@ -45,7 +45,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 0
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 7
   spritePivot: {x: 0.5, y: 0}
   spritePixelsToUnits: 100
@@ -113,10 +113,10 @@ TextureImporter:
       name: musang_0
       rect:
         serializedVersion: 2
-        x: 278
+        x: 263
         y: 772
-        width: 437
-        height: 837
+        width: 461
+        height: 845
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,7 +146,7 @@ TextureImporter:
         x: 175
         y: 147
         width: 617
-        height: 648
+        height: 580
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

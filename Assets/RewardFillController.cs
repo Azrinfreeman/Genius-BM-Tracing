@@ -98,7 +98,7 @@ public class RewardFillController : MonoBehaviour
                 )
             )
             {
-                Debug.Log("GetAnimal");
+                //Debug.Log("GetAnimal");
                 ShowReward();
                 //Invoke("CheckIfRewardDone", 1.2f);
             }
@@ -130,12 +130,15 @@ public class RewardFillController : MonoBehaviour
 
     public void ShowReward()
     {
+        //play animation
         RewardDialog.GetComponent<Animator>().Play("OnDisplay");
+        //set image for the rewrad
         RewardDialog.transform.GetChild(0).GetComponent<Image>().sprite =
             RewardController.instance.AssignImage(
                 PlayerPrefs.GetInt("Shape_" + ShapesManager.Shape.selectedShapeID + "_IndexReward")
             );
 
+        //set name of the reward
         RewardDialog
             .transform.GetChild(0)
             .transform.GetChild(0)
@@ -146,6 +149,8 @@ public class RewardFillController : MonoBehaviour
                 PlayerPrefs.GetInt("Shape_" + ShapesManager.Shape.selectedShapeID + "_IndexReward")
             ]
             .name;
+
+        //set audio is in RewardAnimationController
 
         RewardDialog.transform.GetChild(0).GetComponent<Image>().preserveAspect = true;
     }
