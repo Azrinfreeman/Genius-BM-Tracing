@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -31,9 +32,17 @@ public class RewardFillController : MonoBehaviour
 
     public Image imageReward;
 
+    public Image progress;
+
+    private float tempReward;
+    private float tempRewardLast;
+
+    private float testTotal;
+
     // Start is called before the first frame update
     void Start()
     {
+        progress = transform.GetChild(1).transform.GetChild(0).GetComponent<Image>();
         RewardDialog = GameObject.Find("RewardDialog").GetComponent<Transform>();
         imageReward = transform.GetChild(1).transform.GetChild(1).GetComponent<Image>();
         rewardLastValue = 5;
@@ -56,6 +65,12 @@ public class RewardFillController : MonoBehaviour
         );
 
         slider.value = rewardValueIndex;
+        //round increase number
+        tempReward = rewardValueIndex;
+        tempRewardLast = rewardLastValue;
+        testTotal = tempReward / tempRewardLast;
+        progress.fillAmount = testTotal;
+
         valueText.text = rewardValueIndex.ToString() + " / " + rewardLastValue.ToString();
 
         //assign image if index Reward has increase
