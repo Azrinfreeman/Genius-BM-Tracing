@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b949b2760e1a98b4e8005e51bd45904f
+guid: af7e897ab36877c4a8f30d1951805433
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -45,7 +45,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: video_0
+      name: zirafah 1_0
       rect:
         serializedVersion: 2
-        x: 115
-        y: 174
-        width: 1589
-        height: 1041
+        x: 627
+        y: 455
+        width: 626
+        height: 862
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd5cd965ba48cdf4394f53dbd6a8e2ba
-      internalID: 266728261
+      spriteID: 93137ef358d53ef4cad8fac4fd43bc01
+      internalID: -1652881789
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      video_0: 266728261
+      zirafah 1_0: -1652881789
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

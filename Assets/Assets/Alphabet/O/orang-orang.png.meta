@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b949b2760e1a98b4e8005e51bd45904f
+guid: 475fbf00c5d470b46a411fd30c334afa
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: video_0
+      name: orang-orang_0
       rect:
         serializedVersion: 2
-        x: 115
-        y: 174
-        width: 1589
-        height: 1041
+        x: 299
+        y: 124
+        width: 523
+        height: 758
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd5cd965ba48cdf4394f53dbd6a8e2ba
-      internalID: 266728261
+      spriteID: 26d7381afe65c8149950b790637e7264
+      internalID: 757857374
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      video_0: 266728261
+      orang-orang_0: 757857374
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
